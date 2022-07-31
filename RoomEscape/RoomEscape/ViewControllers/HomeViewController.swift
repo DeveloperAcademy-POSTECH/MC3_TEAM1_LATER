@@ -225,6 +225,7 @@ class HomeViewController: UIViewController {
         guard let genreRecommendation = genreRecommendation.text else { return }
         
         viewController.themeByRecommendation = genreRecommendation
+        viewController.currentLocation = currentLocationButton.currentTitle!
         
         self.navigationController?.pushViewController(viewController, animated: true)
     }
@@ -244,6 +245,7 @@ class HomeViewController: UIViewController {
         guard let genreRecommendation = genreRecommendationSecond.text else { return }
         
         viewController.themeByRecommendation = genreRecommendation
+        viewController.currentLocation = currentLocationButton.currentTitle!
         
         self.navigationController?.pushViewController(viewController, animated: true)
     }

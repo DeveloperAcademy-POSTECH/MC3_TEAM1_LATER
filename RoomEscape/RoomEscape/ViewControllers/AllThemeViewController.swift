@@ -15,6 +15,7 @@ class AllThemeViewController: UIViewController {
     
     var themeByLocation: String = ""
     var themeByRecommendation: String = ""
+    var currentLocation: String = ""
     var themeRoomModels: [RoomModel] = []
     let jsonDataManager: JSONDataManager = JSONDataManager()
     
@@ -48,7 +49,8 @@ class AllThemeViewController: UIViewController {
             let recommendationLabel = criterionLabel.text![..<firstSpace]
 
             themeRoomModels = jsonDataManager.roomData.filter { RoomModel in
-                RoomModel.genre == recommendationLabel
+                RoomModel.genre == recommendationLabel &&
+                RoomModel.location == currentLocation
             }
         }
         
