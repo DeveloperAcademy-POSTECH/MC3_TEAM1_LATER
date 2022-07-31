@@ -44,29 +44,37 @@ class SearchDetailResultViewController: UIViewController {
     }
     
     private func configureSearchResult() {
+        var filteringArray: [RoomModel] = []
+        
         if selectedDifficulty == "쉬운 (1~2)" {
-            searchResultRoomModels = roomDataManager.roomData.filter { RoomModel in
+            filteringArray = roomDataManager.roomData.filter { RoomModel in
                 RoomModel.location == selectedLocation &&
                 RoomModel.genre == selectedTheme &&
                 RoomModel.difficulty == 2
             }
         } else if selectedDifficulty == "보통 (3~4)" {
-            searchResultRoomModels = roomDataManager.roomData.filter { RoomModel in
+            filteringArray = roomDataManager.roomData.filter { RoomModel in
                 RoomModel.location == selectedLocation &&
                 RoomModel.genre == selectedTheme &&
                 RoomModel.difficulty == 4
             }
         } else if selectedDifficulty == "어려움 (5)" {
-            searchResultRoomModels = roomDataManager.roomData.filter { RoomModel in
+            filteringArray = roomDataManager.roomData.filter { RoomModel in
                 RoomModel.location == selectedLocation &&
                 RoomModel.genre == selectedTheme &&
                 RoomModel.difficulty == 5
             }
         } else {
-            searchResultRoomModels = roomDataManager.roomData.filter { RoomModel in
+            filteringArray = roomDataManager.roomData.filter { RoomModel in
                 RoomModel.location == selectedLocation &&
                 RoomModel.genre == selectedTheme &&
                 RoomModel.difficulty == 1
+            }
+        }
+        
+        if selectedWith == "가족" {
+            searchResultRoomModels = filteringArray.filter { RoomModel in
+                RoomModel.genre != "성인"
             }
         }
         
