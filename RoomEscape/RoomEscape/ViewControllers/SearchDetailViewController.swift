@@ -80,7 +80,12 @@ class SearchDetailViewController: UIViewController {
         let genreButton3 = UIAction(title: "스릴러") { _ in self.changeGenre(with: "스릴러") }
         let genreButton4 = UIAction(title: "추리") { _ in self.changeGenre(with: "추리") }
         let genreButton5 = UIAction(title: "판타지") { _ in self.changeGenre(with: "판타지") }
-        let genreButtonMenu = UIMenu(children: [genreButton1, genreButton2, genreButton3, genreButton4, genreButton5])
+        let genreButton6 = UIAction(title: "코믹") { _ in self.changeGenre(with: "코믹") }
+        let genreButton7 = UIAction(title: "큐트") { _ in self.changeGenre(with: "큐트") }
+        let genreButton8 = UIAction(title: "잠입/첩보") { _ in self.changeGenre(with: "잠입/첩보") }
+        let genreButton9 = UIAction(title: "미션/어드벤처") { _ in self.changeGenre(with: "미션/어드벤처") }
+        
+        let genreButtonMenu = UIMenu(children: [genreButton1, genreButton2, genreButton3, genreButton4, genreButton5, genreButton6, genreButton7, genreButton8, genreButton9])
         genrePulldownButton.showsMenuAsPrimaryAction = true
         genrePulldownButton.imageView?.tintColor = .titleDarkGray
         genrePulldownButton.menu = genreButtonMenu
@@ -129,8 +134,16 @@ class SearchDetailViewController: UIViewController {
     }
 
     private func changeCompanion(with companion: String) {
+        var trimmedString: String = ""
         selectedCompanion = companion
-        companionPulldownButton.setTitle(companion, for: .normal)
+        
+        if companion == "친구" {
+            trimmedString = companion + "와"
+        } else {
+            trimmedString = companion + "과"
+        }
+        
+        companionPulldownButton.setTitle(trimmedString, for: .normal)
         companionPulldownButton.backgroundColor = .mainPurple
         companionPulldownButton.setTitleColor(.titleWhite, for: .normal)
         companionPulldownButton.imageView?.tintColor = .titleWhite

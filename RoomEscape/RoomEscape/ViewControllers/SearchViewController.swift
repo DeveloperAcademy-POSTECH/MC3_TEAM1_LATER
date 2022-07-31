@@ -20,7 +20,7 @@ class SearchViewController: UIViewController, UISearchResultsUpdating {
         let viewController = storyboard.instantiateViewController(identifier: "SearchResultViewController") as? SearchResultViewController
         let searchController = UISearchController(searchResultsController: viewController)
         
-        title = "테마 찾기"
+        title = "어디갈래"
         searchController.searchResultsUpdater = self
         searchController.searchBar.placeholder = "원하는 방탈출을 찾아보세요"
         navigationItem.searchController = searchController

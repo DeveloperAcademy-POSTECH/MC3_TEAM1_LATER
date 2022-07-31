@@ -29,7 +29,12 @@ class SearchDetailResultViewController: UIViewController {
         locationLabel.text = selectedLocation
         difficultyLabel.text = selectedDifficulty
         themeLabel.text = selectedTheme
-        withLabel.text = selectedWith
+        
+        if selectedWith == "친구" {
+            withLabel.text = selectedWith + "와"
+        } else {
+            withLabel.text = selectedWith + "과"
+        }
 
         resultTableView.delegate = self
         resultTableView.dataSource = self
