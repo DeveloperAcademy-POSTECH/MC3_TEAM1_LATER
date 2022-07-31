@@ -103,7 +103,7 @@
                                     <constraint firstAttribute="height" constant="50" id="jdk-ZN-pc2"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="맞춤 테마 찾기">
+                                <buttonConfiguration key="configuration" style="filled" title="테마 추가하기">
                                     <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="15"/>
                                     <color key="baseForegroundColor" name="text1"/>
                                     <color key="baseBackgroundColor" name="Main"/>
