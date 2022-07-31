@@ -50,12 +50,14 @@ class SearchDetailResultViewController: UIViewController {
             filteringArray = roomDataManager.roomData.filter { RoomModel in
                 RoomModel.location == selectedLocation &&
                 RoomModel.genre == selectedTheme &&
+                RoomModel.difficulty == 1 ||
                 RoomModel.difficulty == 2
             }
         } else if selectedDifficulty == "보통 (3~4)" {
             filteringArray = roomDataManager.roomData.filter { RoomModel in
                 RoomModel.location == selectedLocation &&
                 RoomModel.genre == selectedTheme &&
+                RoomModel.difficulty == 3 ||
                 RoomModel.difficulty == 4
             }
         } else if selectedDifficulty == "어려움 (5)" {
@@ -64,18 +66,14 @@ class SearchDetailResultViewController: UIViewController {
                 RoomModel.genre == selectedTheme &&
                 RoomModel.difficulty == 5
             }
-        } else {
-            filteringArray = roomDataManager.roomData.filter { RoomModel in
-                RoomModel.location == selectedLocation &&
-                RoomModel.genre == selectedTheme &&
-                RoomModel.difficulty == 1
-            }
         }
         
         if selectedWith == "가족" {
             searchResultRoomModels = filteringArray.filter { RoomModel in
                 RoomModel.genre != "성인"
             }
+        } else {
+            searchResultRoomModels = filteringArray
         }
         
         if searchResultRoomModels.isEmpty {
