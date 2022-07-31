@@ -306,8 +306,12 @@ extension TeamViewController: UITableViewDataSource {
             selectionCell.roomImage?.contentMode = .scaleToFill
             selectionCell.roomImage?.clipsToBounds = true
             
-            for i in 0 ..< roomInfo.difficulty {
-                selectionCell.difficulties?.arrangedSubviews[i].tintColor = UIColor(named: "star");
+            for i in 0 ..< 5 {
+                if i < roomInfo.difficulty {
+                    selectionCell.difficulties?.subviews[i].tintColor = UIColor(named: "star")
+                } else {
+                    selectionCell.difficulties?.subviews[i].tintColor = UIColor.titleBlack
+                }
             }
             
             DispatchQueue.main.async {
@@ -335,8 +339,12 @@ extension TeamViewController: UITableViewDataSource {
             cell.roomImage?.contentMode = .scaleToFill
             cell.roomImage?.clipsToBounds = true
             
-            for i in 0 ..< roomInfo.difficulty {
-                cell.difficulties?.arrangedSubviews[i].tintColor = UIColor(named: "star");
+            for i in 0 ..< 5 {
+                if i < roomInfo.difficulty {
+                    cell.difficulties?.subviews[i].tintColor = UIColor(named: "star")
+                } else {
+                    cell.difficulties?.subviews[i].tintColor = UIColor.titleBlack
+                }
             }
             
             DispatchQueue.main.async {

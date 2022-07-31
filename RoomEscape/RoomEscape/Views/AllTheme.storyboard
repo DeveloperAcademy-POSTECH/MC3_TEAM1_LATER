@@ -28,7 +28,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="center" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="xOh-93-Xre">
-                                <rect key="frame" x="23" y="140" width="391" height="756"/>
+                                <rect key="frame" x="23" y="140" width="368" height="756"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -38,9 +38,9 @@
                         <color key="backgroundColor" name="Background"/>
                         <constraints>
                             <constraint firstItem="uud-dO-djz" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="21" id="9iK-Rv-ahl"/>
-                            <constraint firstItem="xOh-93-Xre" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="9nD-ls-OV7"/>
                             <constraint firstItem="xOh-93-Xre" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="23" id="Ac5-az-YSO"/>
                             <constraint firstItem="xOh-93-Xre" firstAttribute="top" secondItem="uud-dO-djz" secondAttribute="bottom" constant="36" id="GN4-pO-ny9"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="xOh-93-Xre" secondAttribute="trailing" constant="23" id="YXe-pz-5Md"/>
                             <constraint firstAttribute="bottom" secondItem="xOh-93-Xre" secondAttribute="bottom" id="Zk4-hU-yMq"/>
                             <constraint firstItem="uud-dO-djz" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="23" id="tO5-8J-QyB"/>
                         </constraints>
