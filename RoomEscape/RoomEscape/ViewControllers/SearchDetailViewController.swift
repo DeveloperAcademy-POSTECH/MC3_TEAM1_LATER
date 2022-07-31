@@ -28,7 +28,6 @@ class SearchDetailViewController: UIViewController {
         
         // Button status setting
         configureSearchButtonStatus()
-        
     }
     
     private func configureSearchButtonStatus() {
@@ -53,44 +52,45 @@ class SearchDetailViewController: UIViewController {
     
     private func configurePulldownButtons() {
         // Location pulldown button setting
-        let locationButton1 = UIAction(title: "경주시", handler: { _ in self.changeLocation(with: "경주시") })
-        let locationButton2 = UIAction(title: "대구광역시", handler: { _ in self.changeLocation(with: "대구광역시") })
-        let locationButton3 = UIAction(title: "포항시", handler: { _ in self.changeLocation(with: "포항시") })
+        let locationButton1 = UIAction(title: "경주시") { _ in self.changeLocation(with: "경주시") }
+        let locationButton2 = UIAction(title: "대구광역시") { _ in self.changeLocation(with: "대구광역시") }
+        let locationButton3 = UIAction(title: "포항시") { _ in self.changeLocation(with: "포항시") }
+        locationButton1.state = .off
+        locationButton2.state = .off
+        locationButton3.state = .off
+        
         let locationButtonMenu = UIMenu(children: [locationButton1, locationButton2, locationButton3])
+        
         locationPulldownButton.showsMenuAsPrimaryAction = true
-        locationPulldownButton.changesSelectionAsPrimaryAction = true
         locationPulldownButton.imageView?.tintColor = .titleDarkGray
         locationPulldownButton.menu = locationButtonMenu
         
         // Difficulty pulldown button setting
-        let difficultyButton1 = UIAction(title: "쉬운 (1~2)", handler: { _ in self.changeDifficulty(with: "쉬운 (1~2)") })
-        let difficultyButton2 = UIAction(title: "보통 (3~4)", handler: { _ in self.changeDifficulty(with: "보통 (3~4)") })
-        let difficultyButton3 = UIAction(title: "어려움 (5)", handler: { _ in self.changeDifficulty(with: "어려윰 (5)") })
+        let difficultyButton1 = UIAction(title: "쉬운 (1~2)") { _ in self.changeDifficulty(with: "쉬운 (1~2)") }
+        let difficultyButton2 = UIAction(title: "보통 (3~4)") { _ in self.changeDifficulty(with: "보통 (3~4)") }
+        let difficultyButton3 = UIAction(title: "어려움 (5)") { _ in self.changeDifficulty(with: "어려움 (5)") }
         let difficultyButtonMenu = UIMenu(children: [difficultyButton1, difficultyButton2, difficultyButton3])
         difficultyPulldownButton.showsMenuAsPrimaryAction = true
-        difficultyPulldownButton.changesSelectionAsPrimaryAction = true
         difficultyPulldownButton.imageView?.tintColor = .titleDarkGray
         difficultyPulldownButton.menu = difficultyButtonMenu
 
         // Genre pulldown button setting
-        let genreButton1 = UIAction(title: "감성", handler: { _ in self.changeGenre(with: "감성") })
-        let genreButton2 = UIAction(title: "공포", handler: { _ in self.changeGenre(with: "공포") })
-        let genreButton3 = UIAction(title: "스릴러", handler: { _ in self.changeGenre(with: "스릴러") })
-        let genreButton4 = UIAction(title: "추리", handler: { _ in self.changeGenre(with: "추리") })
-        let genreButton5 = UIAction(title: "판타지", handler: { _ in self.changeGenre(with: "판타지") })
+        let genreButton1 = UIAction(title: "감성") { _ in self.changeGenre(with: "감성") }
+        let genreButton2 = UIAction(title: "공포") { _ in self.changeGenre(with: "공포") }
+        let genreButton3 = UIAction(title: "스릴러") { _ in self.changeGenre(with: "스릴러") }
+        let genreButton4 = UIAction(title: "추리") { _ in self.changeGenre(with: "추리") }
+        let genreButton5 = UIAction(title: "판타지") { _ in self.changeGenre(with: "판타지") }
         let genreButtonMenu = UIMenu(children: [genreButton1, genreButton2, genreButton3, genreButton4, genreButton5])
         genrePulldownButton.showsMenuAsPrimaryAction = true
-        genrePulldownButton.changesSelectionAsPrimaryAction = true
         genrePulldownButton.imageView?.tintColor = .titleDarkGray
         genrePulldownButton.menu = genreButtonMenu
         
         // Companion pulldown button setting
-        let companionButton1 = UIAction(title: "친구와", handler: { _ in self.changeCompanion(with: "친구") })
-        let companionButton2 = UIAction(title: "연인과", handler: { _ in self.changeCompanion(with: "연인") })
-        let companionButton3 = UIAction(title: "가족과", handler: { _ in self.changeCompanion(with: "가족") })
+        let companionButton1 = UIAction(title: "친구와") { _ in self.changeCompanion(with: "친구") }
+        let companionButton2 = UIAction(title: "연인과") { _ in self.changeCompanion(with: "연인") }
+        let companionButton3 = UIAction(title: "가족과") { _ in self.changeCompanion(with: "가족") }
         let companionButtonMenu = UIMenu(children: [companionButton1, companionButton2, companionButton3])
         companionPulldownButton.showsMenuAsPrimaryAction = true
-        companionPulldownButton.changesSelectionAsPrimaryAction = true
         companionPulldownButton.imageView?.tintColor = .titleDarkGray
         companionPulldownButton.menu = companionButtonMenu
         
@@ -103,6 +103,7 @@ class SearchDetailViewController: UIViewController {
     
     private func changeLocation(with location: String) {
         selectedLocation = location
+        locationPulldownButton.setTitle(location, for: .normal)
         locationPulldownButton.backgroundColor = .mainPurple
         locationPulldownButton.setTitleColor(.titleWhite, for: .normal)
         locationPulldownButton.imageView?.tintColor = .titleWhite
@@ -111,6 +112,7 @@ class SearchDetailViewController: UIViewController {
     
     private func changeDifficulty(with difficulty: String) {
         selectedDifficulty = difficulty
+        difficultyPulldownButton.setTitle(difficulty, for: .normal)
         difficultyPulldownButton.backgroundColor = .mainPurple
         difficultyPulldownButton.setTitleColor(.titleWhite, for: .normal)
         difficultyPulldownButton.imageView?.tintColor = .titleWhite
@@ -119,6 +121,7 @@ class SearchDetailViewController: UIViewController {
     
     private func changeGenre(with genre: String) {
         selectedGenre = genre
+        genrePulldownButton.setTitle(genre, for: .normal)
         genrePulldownButton.backgroundColor = .mainPurple
         genrePulldownButton.setTitleColor(.titleWhite, for: .normal)
         genrePulldownButton.imageView?.tintColor = .titleWhite
@@ -127,6 +130,7 @@ class SearchDetailViewController: UIViewController {
 
     private func changeCompanion(with companion: String) {
         selectedCompanion = companion
+        companionPulldownButton.setTitle(companion, for: .normal)
         companionPulldownButton.backgroundColor = .mainPurple
         companionPulldownButton.setTitleColor(.titleWhite, for: .normal)
         companionPulldownButton.imageView?.tintColor = .titleWhite

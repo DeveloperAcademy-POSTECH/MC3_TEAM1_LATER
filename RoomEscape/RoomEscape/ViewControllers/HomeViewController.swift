@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import MapKit
+import CoreLocation
 
 class HomeViewController: UIViewController {
     // IBOutlet Variables
@@ -31,6 +33,7 @@ class HomeViewController: UIViewController {
     var locationRoomModels: [RoomModel] = []
     var randomRoomModels: [RoomModel] = []
     var randomRoomModelsSecond: [RoomModel] = []
+    let locationManager = CLLocationManager()
     let roomDataManager: JSONDataManager = JSONDataManager()
     
     // viewDidLoad
@@ -46,20 +49,24 @@ class HomeViewController: UIViewController {
         // Pull down setting
         configruePulldownButton()
         
-        // ✅ Primary Location Setting
-        // TODO: Remove this handler by setting current location reading logic
-        configurePrimaryLocation()
+        // ✅ Currnet Location Setting
+        configureCurrnetLocation()
         
         // Configure other settings
         dimensionImageView.image = UIImage(named: Constants.mainImageArray[Int.random(in: 0..<Constants.mainImageArray.count)])
     }
     
     // Handling functions
-    private func configurePrimaryLocation() {
-        currentLocationButton.setTitle(Constants.locations[2], for: .normal)
-        currentLocationLabel.text = Constants.locations[2] + " 근처"
-        locationRoomModels = roomDataManager.roomData.filter { RoomModel in
-            RoomModel.location == Constants.locations[2]
+    private func configureCurrnetLocation() {
+        self.locationManager.requestAlwaysAuthorization()
+        
+        // For use in foreground
+        self.locationManager.requestWhenInUseAuthorization()
+        
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+            locationManager.startUpdatingLocation()
         }
     }
     
@@ -128,19 +135,16 @@ class HomeViewController: UIViewController {
     }
     
     private func configruePulldownButton() {
-        currentLocationButton.showsMenuAsPrimaryAction = true
-        currentLocationButton.changesSelectionAsPrimaryAction = true
-        
-        let button1 = UIAction(title: "경주시", handler: { _ in self.changeCurrentLocation(location: "경주시") })
-        let button2 = UIAction(title: "대구광역시", handler: { _ in self.changeCurrentLocation(location: "대구광역시") })
-        let button3 = UIAction(title: "포항시", handler: { _ in self.changeCurrentLocation(location: "포항시") })
-        
+        let button1 = UIAction(title: "경주시") { _ in self.changeCurrentLocation(location: "경주시") }
+        let button2 = UIAction(title: "대구광역시") { _ in self.changeCurrentLocation(location: "대구광역시") }
+        let button3 = UIAction(title: "포항시") { _ in self.changeCurrentLocation(location: "포항시") }
         let buttonMenu = UIMenu(children: [button1, button2, button3])
-        
+        currentLocationButton.showsMenuAsPrimaryAction = true
         currentLocationButton.menu = buttonMenu
     }
     
     private func changeCurrentLocation(location: String) {
+        currentLocationButton.setTitle(location, for: .normal)
         currentLocationLabel.text = location + " 근처"
         
         if location.count == 3 {
@@ -288,3 +292,40 @@ extension HomeViewController: UICollectionViewDataSource {
     
 }// HomeViewController: UICollectionViewDataSource
 
+extension HomeViewController: CLLocationManagerDelegate {
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        guard let locationValue: CLLocationCoordinate2D = manager.location?.coordinate else { return }
+        let latitude: Double = locationValue.latitude
+        let longitude: Double = locationValue.longitude
+
+        locationManager.stopUpdatingLocation()
+
+        /*
+         대구 from Google: 35.8714° N, 128.6014° E
+         대구 from CL: 35.8603515625 / 128.51286659713895
+         ------
+         포항 36.0190° N, 129.3435° E
+         ------
+         경주 35.8562° N, 129.2247° E
+         */
+        switch (floor(latitude), floor(longitude)) {
+        case (35, 128):
+            // 대구광역시
+            changeCurrentLocation(location: "대구광역시")
+            return
+        case (36, 129):
+            // 포항시
+            changeCurrentLocation(location: "포항시")
+            return
+        case (35, 129):
+            // 경주시
+            changeCurrentLocation(location: "경주시")
+            return
+        default:
+            // 포항 if proper location info wouldn't be provided
+            changeCurrentLocation(location: "포항시")
+            return
+        }
+    }
+}
