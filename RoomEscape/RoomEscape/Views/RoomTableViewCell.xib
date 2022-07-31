@@ -54,6 +54,9 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="18" id="lwS-qt-SLe"/>
+                                                        </constraints>
                                                     </stackView>
                                                     <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="방탈출 이름" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gnB-I9-xWB">
                                                         <rect key="frame" x="0.0" y="26" width="194" height="50"/>
