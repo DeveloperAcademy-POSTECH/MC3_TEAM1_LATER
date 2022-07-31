@@ -282,7 +282,7 @@ extension HomeViewController: UICollectionViewDataSource {
                 if let data = try? Data(contentsOf: url) {
                     cell.roomImage?.image = UIImage(data: data)
                 } else {
-                    cell.roomImage?.image = UIImage(systemName: "house")
+                    cell.roomImage?.image = UIImage(named: "noRoom")
                 }
             }
         }
