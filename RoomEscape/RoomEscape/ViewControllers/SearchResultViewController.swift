@@ -60,8 +60,12 @@ extension SearchResultViewController: UITableViewDataSource {
         cell.roomImage?.clipsToBounds = true
         cell.index = roomInfo.id
         
-        for i in 0 ..< roomInfo.difficulty {
-            cell.difficulties?.arrangedSubviews[i].tintColor = UIColor(named: "star");
+        for i in 0 ..< 5{
+            if i < roomInfo.difficulty {
+                cell.difficulties?.subviews[i].tintColor = UIColor(named: "star")
+            } else {
+                cell.difficulties?.subviews[i].tintColor = UIColor.titleBlack
+            }
         }
         
         DispatchQueue.main.async {
