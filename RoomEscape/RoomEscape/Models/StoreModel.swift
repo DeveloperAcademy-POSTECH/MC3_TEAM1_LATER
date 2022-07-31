@@ -7,13 +7,15 @@
 
 import Foundation
 
-struct RoomModel: Codable {
+struct RoomModel: Codable, Hashable {
+    let id: Int
+    let location: String
     let storeName: String
+    let address: String
     let phoneNumber: String
     let homepage: String
     let image: String
     let title: String
-    let star: Int
     let genre: String
     let difficulty: Int
     let activity: Int
@@ -21,92 +23,3 @@ struct RoomModel: Codable {
     let description: String
     let recommendation: String
 }
-
-struct SampleRoomModel {
-    let image: String
-    let title: String
-    let genre: String
-    let difficulty: Float
-    let activity: String
-    let maxParty: Int
-    let timeLimit: Int
-    let description: String
-}
-
-struct TeamModel {
-    let teamName: String
-    let themeList: [Int]
-}
-
-let sampleRoomArray: [SampleRoomModel] = [
-    SampleRoomModel(
-        image: "https://previews.123rf.com/images/aquir/aquir1311/aquir131100316/23569861-sample-grunge-red-round-stamp.jpg",
-        title: "낭랑카페",
-        genre: "판타지",
-        difficulty: 4.0,
-        activity: "적음",
-        maxParty: 4,
-        timeLimit: 75,
-        description: "낭랑 카페는 오랫동안 존재해 왔습니다."
-    ),
-    SampleRoomModel(
-        image: "https://previews.123rf.com/images/aquir/aquir1311/aquir131100316/23569861-sample-grunge-red-round-stamp.jpg",
-        title: "낭랑카페",
-        genre: "판타지",
-        difficulty: 4.0,
-        activity: "적음",
-        maxParty: 4,
-        timeLimit: 75,
-        description: "낭랑 카페는 오랫동안 존재해 왔습니다."
-    ),
-    SampleRoomModel(
-        image: "https://previews.123rf.com/images/aquir/aquir1311/aquir131100316/23569861-sample-grunge-red-round-stamp.jpg",
-        title: "낭랑카페",
-        genre: "판타지",
-        difficulty: 4.0,
-        activity: "적음",
-        maxParty: 4,
-        timeLimit: 75,
-        description: "낭랑 카페는 오랫동안 존재해 왔습니다."
-    ),
-    SampleRoomModel(
-        image: "https://previews.123rf.com/images/aquir/aquir1311/aquir131100316/23569861-sample-grunge-red-round-stamp.jpg",
-        title: "낭랑카페",
-        genre: "판타지",
-        difficulty: 4.0,
-        activity: "적음",
-        maxParty: 4,
-        timeLimit: 75,
-        description: "낭랑 카페는 오랫동안 존재해 왔습니다."
-    ),
-    SampleRoomModel(
-        image: "https://previews.123rf.com/images/aquir/aquir1311/aquir131100316/23569861-sample-grunge-red-round-stamp.jpg",
-        title: "낭랑카페",
-        genre: "판타지",
-        difficulty: 4.0,
-        activity: "적음",
-        maxParty: 4,
-        timeLimit: 75,
-        description: "낭랑 카페는 오랫동안 존재해 왔습니다."
-    ),
-    SampleRoomModel(
-        image: "https://previews.123rf.com/images/aquir/aquir1311/aquir131100316/23569861-sample-grunge-red-round-stamp.jpg",
-        title: "낭랑카페",
-        genre: "판타지",
-        difficulty: 4.0,
-        activity: "적음",
-        maxParty: 4,
-        timeLimit: 75,
-        description: "낭랑 카페는 오랫동안 존재해 왔습니다."
-    ),
-    SampleRoomModel(
-        image: "https://previews.123rf.com/images/aquir/aquir1311/aquir131100316/23569861-sample-grunge-red-round-stamp.jpg",
-        title: "낭랑카페",
-        genre: "판타지",
-        difficulty: 4.0,
-        activity: "적음",
-        maxParty: 4,
-        timeLimit: 75,
-        description: "낭랑 카페는 오랫동안 존재해 왔습니다."
-    )
-]

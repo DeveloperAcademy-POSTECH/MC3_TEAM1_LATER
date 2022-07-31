@@ -7,11 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		160F901128926A65006CE34A /* ShareScreenShotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160F901028926A65006CE34A /* ShareScreenShotView.swift */; };
+		160F901328926C6B006CE34A /* ThemePoster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160F901228926C6B006CE34A /* ThemePoster.swift */; };
+		160F9031289304A9006CE34A /* DescriptionContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160F9030289304A9006CE34A /* DescriptionContainer.swift */; };
 		1659079528848AF100B23372 /* PickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1659079428848AF100B23372 /* PickViewController.swift */; };
 		1659079E2885B4E800B23372 /* RoomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1659079C2885B4E800B23372 /* RoomTableViewCell.swift */; };
 		1659079F2885B4E800B23372 /* RoomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1659079D2885B4E800B23372 /* RoomTableViewCell.xib */; };
 		165907A52886EEDE00B23372 /* TeamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165907A42886EEDE00B23372 /* TeamCell.swift */; };
 		165907A728870DED00B23372 /* MakeTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165907A628870DED00B23372 /* MakeTeamViewController.swift */; };
+		166DF9122890AD3F0051BAD6 /* RoomSelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166DF9102890AD3F0051BAD6 /* RoomSelectionTableViewCell.swift */; };
+		166DF9132890AD3F0051BAD6 /* RoomSelectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 166DF9112890AD3F0051BAD6 /* RoomSelectionTableViewCell.xib */; };
 		16AAC4C628889AE2003D8FEF /* Pick.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16590792288482EF00B23372 /* Pick.storyboard */; };
 		2552F8C72886A8BA00E40599 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2552F8C62886A8BA00E40599 /* Detail.storyboard */; };
 		2558940528878D10008E4ACC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2558940428878D10008E4ACC /* DetailViewController.swift */; };
@@ -20,8 +25,13 @@
 		25D711F028887114009B684A /* PickSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D711EF28887114009B684A /* PickSheetViewController.swift */; };
 		25D711F228888C97009B684A /* PickTeamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D711F128888C97009B684A /* PickTeamCell.swift */; };
 		3D8FC6B92885339700722937 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8FC6B82885339700722937 /* Extension.swift */; };
+		3D8FF087288FE7FB0029DE1A /* SearchDetailResult.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D8FF086288FE7FB0029DE1A /* SearchDetailResult.storyboard */; };
+		3D8FF089288FE8630029DE1A /* SearchDetailResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8FF088288FE8630029DE1A /* SearchDetailResultViewController.swift */; };
 		7A2CD1B42887A29B002D5950 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2CD1B32887A29B002D5950 /* Constants.swift */; };
 		7A2CD1B6288884FE002D5950 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2CD1B5288884FD002D5950 /* Util.swift */; };
+		7A30AF792892BD5200796D3A /* TeamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A30AF782892BD5200796D3A /* TeamModel.swift */; };
+		7A30AF7B2892D77B00796D3A /* AllTheme.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A30AF7A2892D77B00796D3A /* AllTheme.storyboard */; };
+		7A30AF7D2892D78C00796D3A /* AllThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A30AF7C2892D78C00796D3A /* AllThemeViewController.swift */; };
 		7A6604AF28871835000DC85B /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6604AE28871835000DC85B /* TeamViewController.swift */; };
 		7A6604B128871856000DC85B /* Team.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A6604B028871856000DC85B /* Team.storyboard */; };
 		7ABEE2B1288577C100C2C020 /* JSONDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABEE2B0288577C100C2C020 /* JSONDataManager.swift */; };
@@ -29,10 +39,16 @@
 		7ABEE2BC2885CE5B00C2C020 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABEE2BB2885CE5B00C2C020 /* HomeViewController.swift */; };
 		7AEAB5FA2885746400BA2216 /* StoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEAB5F92885746400BA2216 /* StoreModel.swift */; };
 		7AEAB5FD2885764500BA2216 /* StoreData.json in Resources */ = {isa = PBXBuildFile; fileRef = 7AEAB5FC2885764500BA2216 /* StoreData.json */; };
+		893E5263288FE3C20027C7B4 /* SearchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893E5262288FE3C20027C7B4 /* SearchDetailViewController.swift */; };
+		893E5265288FE3D10027C7B4 /* SearchDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 893E5264288FE3D10027C7B4 /* SearchDetail.storyboard */; };
 		89815E852886A84A000C5C24 /* RoomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89815E832886A84A000C5C24 /* RoomCollectionViewCell.swift */; };
 		89815E862886A84A000C5C24 /* RoomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89815E842886A84A000C5C24 /* RoomCollectionViewCell.xib */; };
 		A0181DF52885320600F5272F /* ThemeCompare.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0181DF42885320600F5272F /* ThemeCompare.storyboard */; };
 		A0181DF9288532D700F5272F /* ThemeCompareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0181DF8288532D700F5272F /* ThemeCompareViewController.swift */; };
+		A04A77942890018D00D728A9 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A04A77932890018D00D728A9 /* Search.storyboard */; };
+		A04A7796289002F800D728A9 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04A7795289002F800D728A9 /* SearchViewController.swift */; };
+		A04A77982890EC6300D728A9 /* SearchResult.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A04A77972890EC6300D728A9 /* SearchResult.storyboard */; };
+		A04A779A2890EC8100D728A9 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04A77992890EC8100D728A9 /* SearchResultViewController.swift */; };
 		A0E3E04428877A5B00919B92 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E3E04328877A5B00919B92 /* UILabel+Extension.swift */; };
 		A0FEF759287EBDF500DA3FBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FEF758287EBDF500DA3FBE /* AppDelegate.swift */; };
 		A0FEF75B287EBDF500DA3FBE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FEF75A287EBDF500DA3FBE /* SceneDelegate.swift */; };
@@ -43,13 +59,31 @@
 		C19893842887E91A0045CF40 /* PohangData.json in Resources */ = {isa = PBXBuildFile; fileRef = C19893832887E91A0045CF40 /* PohangData.json */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		7AD34ADC2890D78300E92B73 /* Embed App Clips */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/AppClips";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed App Clips";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		160F901028926A65006CE34A /* ShareScreenShotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareScreenShotView.swift; sourceTree = "<group>"; };
+		160F901228926C6B006CE34A /* ThemePoster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePoster.swift; sourceTree = "<group>"; };
+		160F9030289304A9006CE34A /* DescriptionContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionContainer.swift; sourceTree = "<group>"; };
 		16590792288482EF00B23372 /* Pick.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Pick.storyboard; sourceTree = "<group>"; };
 		1659079428848AF100B23372 /* PickViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickViewController.swift; sourceTree = "<group>"; };
 		1659079C2885B4E800B23372 /* RoomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomTableViewCell.swift; sourceTree = "<group>"; usesTabs = 0; };
 		1659079D2885B4E800B23372 /* RoomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoomTableViewCell.xib; sourceTree = "<group>"; };
 		165907A42886EEDE00B23372 /* TeamCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCell.swift; sourceTree = "<group>"; };
 		165907A628870DED00B23372 /* MakeTeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeTeamViewController.swift; sourceTree = "<group>"; };
+		166DF9102890AD3F0051BAD6 /* RoomSelectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomSelectionTableViewCell.swift; sourceTree = "<group>"; };
+		166DF9112890AD3F0051BAD6 /* RoomSelectionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoomSelectionTableViewCell.xib; sourceTree = "<group>"; };
 		2552F8C62886A8BA00E40599 /* Detail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
 		2558940428878D10008E4ACC /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		25D711E328885481009B684A /* DetailPickSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPickSheetViewController.swift; sourceTree = "<group>"; };
@@ -57,8 +91,13 @@
 		25D711EF28887114009B684A /* PickSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickSheetViewController.swift; sourceTree = "<group>"; };
 		25D711F128888C97009B684A /* PickTeamCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickTeamCell.swift; sourceTree = "<group>"; };
 		3D8FC6B82885339700722937 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		3D8FF086288FE7FB0029DE1A /* SearchDetailResult.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchDetailResult.storyboard; sourceTree = "<group>"; };
+		3D8FF088288FE8630029DE1A /* SearchDetailResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDetailResultViewController.swift; sourceTree = "<group>"; };
 		7A2CD1B32887A29B002D5950 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		7A2CD1B5288884FD002D5950 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		7A30AF782892BD5200796D3A /* TeamModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamModel.swift; sourceTree = "<group>"; };
+		7A30AF7A2892D77B00796D3A /* AllTheme.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AllTheme.storyboard; sourceTree = "<group>"; };
+		7A30AF7C2892D78C00796D3A /* AllThemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllThemeViewController.swift; sourceTree = "<group>"; };
 		7A6604AE28871835000DC85B /* TeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
 		7A6604B028871856000DC85B /* Team.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Team.storyboard; sourceTree = "<group>"; };
 		7ABEE2B0288577C100C2C020 /* JSONDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDataManager.swift; sourceTree = "<group>"; };
@@ -66,10 +105,16 @@
 		7ABEE2BB2885CE5B00C2C020 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7AEAB5F92885746400BA2216 /* StoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreModel.swift; sourceTree = "<group>"; };
 		7AEAB5FC2885764500BA2216 /* StoreData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = StoreData.json; sourceTree = "<group>"; };
+		893E5262288FE3C20027C7B4 /* SearchDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDetailViewController.swift; sourceTree = "<group>"; };
+		893E5264288FE3D10027C7B4 /* SearchDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchDetail.storyboard; sourceTree = "<group>"; };
 		89815E832886A84A000C5C24 /* RoomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCollectionViewCell.swift; sourceTree = "<group>"; };
 		89815E842886A84A000C5C24 /* RoomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoomCollectionViewCell.xib; sourceTree = "<group>"; };
 		A0181DF42885320600F5272F /* ThemeCompare.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ThemeCompare.storyboard; sourceTree = "<group>"; };
 		A0181DF8288532D700F5272F /* ThemeCompareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeCompareViewController.swift; sourceTree = "<group>"; };
+		A04A77932890018D00D728A9 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		A04A7795289002F800D728A9 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		A04A77972890EC6300D728A9 /* SearchResult.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchResult.storyboard; sourceTree = "<group>"; };
+		A04A77992890EC8100D728A9 /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
 		A0E3E04328877A5B00919B92 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
 		A0FEF755287EBDF500DA3FBE /* RoomEscape.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoomEscape.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0FEF758287EBDF500DA3FBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +138,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		160F900F28926A3F006CE34A /* ShareScreenshot */ = {
+			isa = PBXGroup;
+			children = (
+				160F901028926A65006CE34A /* ShareScreenShotView.swift */,
+				160F901228926C6B006CE34A /* ThemePoster.swift */,
+				160F9030289304A9006CE34A /* DescriptionContainer.swift */,
+			);
+			path = ShareScreenshot;
+			sourceTree = "<group>";
+		};
 		7ABEE2AF288577A400C2C020 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,17 +159,25 @@
 		7AEAB5FB2885748600BA2216 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				160F900F28926A3F006CE34A /* ShareScreenshot */,
 				A0181DF42885320600F5272F /* ThemeCompare.storyboard */,
 				2552F8C62886A8BA00E40599 /* Detail.storyboard */,
 				A0FEF75E287EBDF500DA3FBE /* Main.storyboard */,
 				7ABEE2B92885CE3200C2C020 /* Home.storyboard */,
 				16590792288482EF00B23372 /* Pick.storyboard */,
+				A04A77932890018D00D728A9 /* Search.storyboard */,
 				1659079C2885B4E800B23372 /* RoomTableViewCell.swift */,
 				1659079D2885B4E800B23372 /* RoomTableViewCell.xib */,
+				166DF9102890AD3F0051BAD6 /* RoomSelectionTableViewCell.swift */,
+				166DF9112890AD3F0051BAD6 /* RoomSelectionTableViewCell.xib */,
 				89815E832886A84A000C5C24 /* RoomCollectionViewCell.swift */,
 				89815E842886A84A000C5C24 /* RoomCollectionViewCell.xib */,
 				7A6604B028871856000DC85B /* Team.storyboard */,
 				25D711EB28886B02009B684A /* PickSheet.storyboard */,
+				3D8FF086288FE7FB0029DE1A /* SearchDetailResult.storyboard */,
+				A04A77972890EC6300D728A9 /* SearchResult.storyboard */,
+				893E5264288FE3D10027C7B4 /* SearchDetail.storyboard */,
+				7A30AF7A2892D77B00796D3A /* AllTheme.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -123,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				7AEAB5F92885746400BA2216 /* StoreModel.swift */,
+				7A30AF782892BD5200796D3A /* TeamModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -141,6 +205,11 @@
 				25D711E328885481009B684A /* DetailPickSheetViewController.swift */,
 				25D711EF28887114009B684A /* PickSheetViewController.swift */,
 				25D711F128888C97009B684A /* PickTeamCell.swift */,
+				3D8FF088288FE8630029DE1A /* SearchDetailResultViewController.swift */,
+				A04A7795289002F800D728A9 /* SearchViewController.swift */,
+				A04A77992890EC8100D728A9 /* SearchResultViewController.swift */,
+				893E5262288FE3C20027C7B4 /* SearchDetailViewController.swift */,
+				7A30AF7C2892D78C00796D3A /* AllThemeViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -201,6 +270,7 @@
 				A0FEF751287EBDF500DA3FBE /* Sources */,
 				A0FEF752287EBDF500DA3FBE /* Frameworks */,
 				A0FEF753287EBDF500DA3FBE /* Resources */,
+				7AD34ADC2890D78300E92B73 /* Embed App Clips */,
 			);
 			buildRules = (
 			);
@@ -250,17 +320,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				16AAC4C628889AE2003D8FEF /* Pick.storyboard in Resources */,
+				7A30AF7B2892D77B00796D3A /* AllTheme.storyboard in Resources */,
 				A0181DF52885320600F5272F /* ThemeCompare.storyboard in Resources */,
 				7AEAB5FD2885764500BA2216 /* StoreData.json in Resources */,
+				166DF9132890AD3F0051BAD6 /* RoomSelectionTableViewCell.xib in Resources */,
 				1659079F2885B4E800B23372 /* RoomTableViewCell.xib in Resources */,
+				A04A77942890018D00D728A9 /* Search.storyboard in Resources */,
+				893E5265288FE3D10027C7B4 /* SearchDetail.storyboard in Resources */,
 				7A6604B128871856000DC85B /* Team.storyboard in Resources */,
 				A0FEF765287EBDF600DA3FBE /* LaunchScreen.storyboard in Resources */,
 				25D711EC28886B02009B684A /* PickSheet.storyboard in Resources */,
 				7ABEE2BA2885CE3200C2C020 /* Home.storyboard in Resources */,
 				2552F8C72886A8BA00E40599 /* Detail.storyboard in Resources */,
+				A04A77982890EC6300D728A9 /* SearchResult.storyboard in Resources */,
 				C19893842887E91A0045CF40 /* PohangData.json in Resources */,
 				A0FEF762287EBDF600DA3FBE /* Assets.xcassets in Resources */,
 				A0FEF760287EBDF500DA3FBE /* Main.storyboard in Resources */,
+				3D8FF087288FE7FB0029DE1A /* SearchDetailResult.storyboard in Resources */,
 				89815E862886A84A000C5C24 /* RoomCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,25 +349,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0181DF9288532D700F5272F /* ThemeCompareViewController.swift in Sources */,
+				A04A779A2890EC8100D728A9 /* SearchResultViewController.swift in Sources */,
 				7A2CD1B6288884FE002D5950 /* Util.swift in Sources */,
 				2558940528878D10008E4ACC /* DetailViewController.swift in Sources */,
 				25D711E428885482009B684A /* DetailPickSheetViewController.swift in Sources */,
 				1659079528848AF100B23372 /* PickViewController.swift in Sources */,
 				25D711F028887114009B684A /* PickSheetViewController.swift in Sources */,
+				166DF9122890AD3F0051BAD6 /* RoomSelectionTableViewCell.swift in Sources */,
+				160F9031289304A9006CE34A /* DescriptionContainer.swift in Sources */,
 				A0E3E04428877A5B00919B92 /* UILabel+Extension.swift in Sources */,
+				160F901328926C6B006CE34A /* ThemePoster.swift in Sources */,
 				A0FEF75D287EBDF500DA3FBE /* MainTabBarController.swift in Sources */,
 				7ABEE2B1288577C100C2C020 /* JSONDataManager.swift in Sources */,
+				7A30AF792892BD5200796D3A /* TeamModel.swift in Sources */,
 				7ABEE2BC2885CE5B00C2C020 /* HomeViewController.swift in Sources */,
 				7AEAB5FA2885746400BA2216 /* StoreModel.swift in Sources */,
 				3D8FC6B92885339700722937 /* Extension.swift in Sources */,
+				A04A7796289002F800D728A9 /* SearchViewController.swift in Sources */,
 				A0FEF759287EBDF500DA3FBE /* AppDelegate.swift in Sources */,
 				1659079E2885B4E800B23372 /* RoomTableViewCell.swift in Sources */,
+				893E5263288FE3C20027C7B4 /* SearchDetailViewController.swift in Sources */,
 				165907A728870DED00B23372 /* MakeTeamViewController.swift in Sources */,
 				A0FEF75B287EBDF500DA3FBE /* SceneDelegate.swift in Sources */,
 				7A6604AF28871835000DC85B /* TeamViewController.swift in Sources */,
+				7A30AF7D2892D78C00796D3A /* AllThemeViewController.swift in Sources */,
 				165907A52886EEDE00B23372 /* TeamCell.swift in Sources */,
+				3D8FF089288FE8630029DE1A /* SearchDetailResultViewController.swift in Sources */,
 				89815E852886A84A000C5C24 /* RoomCollectionViewCell.swift in Sources */,
 				7A2CD1B42887A29B002D5950 /* Constants.swift in Sources */,
+				160F901128926A65006CE34A /* ShareScreenShotView.swift in Sources */,
 				25D711F228888C97009B684A /* PickTeamCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,23 +521,27 @@
 		A0FEF76A287EBDF600DA3FBE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VLFPWV3569;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RoomEscape/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "가보자고";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.later.RoomEscape;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Later.RoomEscape;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -462,23 +552,27 @@
 		A0FEF76B287EBDF600DA3FBE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VLFPWV3569;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RoomEscape/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "가보자고";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.later.RoomEscape;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Later.RoomEscape;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

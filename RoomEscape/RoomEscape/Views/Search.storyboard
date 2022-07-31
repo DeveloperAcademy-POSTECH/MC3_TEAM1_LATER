@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gri-00-Ffo">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="SearchViewController" customModule="RoomEscape" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="g5F-Ln-7rk">
+                                <rect key="frame" x="107" y="293" width="200" height="310"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3dMagnifyingglass" translatesAutoresizingMaskIntoConstraints="NO" id="MAj-Bk-5Mk" userLabel="Search Image Icon">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="gfX-GN-ZvC"/>
+                                            <constraint firstAttribute="height" constant="200" id="zdV-9O-M4X"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="지금 상황에 맞는 테마를 원하시나요?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mpX-aa-ngg">
+                                        <rect key="frame" x="0.0" y="212" width="200" height="41"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
+                                        <color key="textColor" name="text4"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JfW-Eg-CzR">
+                                        <rect key="frame" x="0.0" y="265" width="200" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="rc6-Ri-kcJ"/>
+                                        </constraints>
+                                        <buttonConfiguration key="configuration" style="filled">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="맞춤 테마 찾기">
+                                                    <attributes>
+                                                        <font key="NSFont" size="15" name="AppleSDGothicNeo-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <color key="baseForegroundColor" name="text1"/>
+                                            <color key="baseBackgroundColor" name="Main"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="themeSearchButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="IrR-bR-cOh"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="mpX-aa-ngg" secondAttribute="trailing" id="6X7-Ow-QZY"/>
+                                    <constraint firstItem="mpX-aa-ngg" firstAttribute="leading" secondItem="g5F-Ln-7rk" secondAttribute="leading" id="I6Y-VV-Grf"/>
+                                    <constraint firstItem="JfW-Eg-CzR" firstAttribute="leading" secondItem="g5F-Ln-7rk" secondAttribute="leading" id="qrC-ZW-JKK"/>
+                                    <constraint firstAttribute="trailing" secondItem="JfW-Eg-CzR" secondAttribute="trailing" id="tlS-1R-GYc"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="Background"/>
+                        <constraints>
+                            <constraint firstItem="g5F-Ln-7rk" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="AOy-H4-ncS"/>
+                            <constraint firstItem="g5F-Ln-7rk" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="SxY-M8-gk0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="3c8-By-Gjs">
+                        <barButtonItem key="backBarButtonItem" title=" " id="pDx-ec-uKC"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="themeSearchButton" destination="JfW-Eg-CzR" id="OPZ-iD-M5O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3672.4637681159425" y="84.375"/>
+        </scene>
+        <!--Detail-->
+        <scene sceneID="8C2-hl-udQ">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="DetailViewControllerRef" storyboardName="Detail" id="ILe-qc-iMe" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BYi-tl-HjF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4271" y="-36"/>
+        </scene>
+        <!--SearchDetail-->
+        <scene sceneID="zpV-sb-tUN">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="SearchDetailRef" storyboardName="SearchDetail" id="cXQ-h9-zCm" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9WJ-Yo-D6B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4277" y="25"/>
+        </scene>
+        <!--SearchResult-->
+        <scene sceneID="PFW-Wt-oV2">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="SearchResultViewController" storyboardName="SearchResult" id="4kc-YO-lgJ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xwx-dV-0pw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4282" y="98"/>
+        </scene>
+        <!--어디갈래-->
+        <scene sceneID="DRk-P6-fDT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gri-00-Ffo" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="어디갈래" image="magnifyingglass" catalog="system" selectedImage="magnifyingglass" id="Br7-wH-vm7">
+                        <color key="badgeColor" name="Main"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="ojY-2f-3Wp">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" name="text1"/>
+                        <color key="barTintColor" name="text1"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="text1"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="HTJ-FT-45c"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rfj-3G-HAI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2762.3188405797105" y="84.375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="3dMagnifyingglass" width="230" height="230"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <namedColor name="Background">
+            <color red="0.062745098039215685" green="0.058823529411764705" blue="0.058823529411764705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Main">
+            <color red="0.4823529411764706" green="0.38039215686274508" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="text1">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="text4">
+            <color red="0.58823529411764708" green="0.58823529411764708" blue="0.58823529411764708" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

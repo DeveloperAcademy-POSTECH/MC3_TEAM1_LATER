@@ -16,14 +16,13 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var poster: UIImageView!
     @IBOutlet weak var storeName: UILabel!
     @IBOutlet weak var roomTitle: UILabel!
-    @IBOutlet weak var stars: UIStackView!
     @IBOutlet weak var genre: UILabel!
-    @IBOutlet weak var difficulty: UILabel!
     @IBOutlet weak var activity: UILabel!
     @IBOutlet weak var horror: UILabel!
     @IBOutlet weak var roomDescription: UILabel!
     @IBOutlet weak var recommendation: UILabel!
-
+    @IBOutlet weak var difficulty: UILabel!
+    
     @IBOutlet weak var pickButton: UIButton!
     
     override func viewDidLoad() {
@@ -33,20 +32,34 @@ class DetailViewController: UIViewController {
         
         loadPosterFrom(urlAddress: roomModel.image)
         
-        for i in 0 ..< roomModel.star {
-            stars.arrangedSubviews[i].tintColor = UIColor(named: "star");
-        }
+        recommendation.text = roomModel.recommendation + "에게 추천"
         
-        storeName.text = roomModel.storeName
+        genre.text = roomModel.genre + " 테마"
         roomTitle.text = roomModel.title
-        genre.text = roomModel.genre
+        storeName.text = roomModel.storeName
+        
         difficulty.text = String(roomModel.difficulty) + ".0"
         activity.text = String(roomModel.activity) + ".0"
         horror.text = String(roomModel.horror) + ".0"
-        roomDescription.text = "  " + roomModel.description
-        recommendation.text = roomModel.recommendation
+        
+        roomDescription.text = roomModel.description
+        
+        self.changeRecommendationSuffix()
         
         pickButton.addTarget(self, action: #selector(pickButtonTapped), for: .touchUpInside)
+    }
+    
+    func changeRecommendationSuffix() {
+        guard let text = self.recommendation.text else { return }
+        
+        let suffix = "에게 추천"
+        
+        let attributeString = NSMutableAttributedString(string: text)
+        
+        attributeString.addAttribute(.foregroundColor, value: UIColor.titleDarkGray as Any, range: (text as NSString).range(of: suffix))
+        attributeString.addAttribute(.font, value: UIFont.systemFont(ofSize: 15.0, weight: .regular), range: (text as NSString).range(of: suffix))
+        
+        self.recommendation.attributedText = attributeString
     }
     
     func loadPosterFrom(urlAddress: String) {

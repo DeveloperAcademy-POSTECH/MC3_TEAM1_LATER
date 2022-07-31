@@ -9,13 +9,13 @@ import UIKit
 
 class ThemeCompareViewController: UIViewController {
     
+    @IBOutlet weak var scrollView: UIScrollView!
     var firstTheme: RoomModel?
     var secondTheme: RoomModel?
 
     @IBOutlet weak var firstThemeImage: UIImageView!
     @IBOutlet weak var firstThemeTitle: UILabel!
     @IBOutlet weak var firstThemeStoreName: UILabel!
-    @IBOutlet weak var firstThemeStar: UILabel!
     @IBOutlet weak var firstThemeGenre: UILabel!
     @IBOutlet weak var firstThemeDifficulty: UILabel!
     @IBOutlet weak var firstThemeActivity: UILabel!
@@ -24,7 +24,6 @@ class ThemeCompareViewController: UIViewController {
     @IBOutlet weak var secondThemeImage: UIImageView!
     @IBOutlet weak var secondThemeTitle: UILabel!
     @IBOutlet weak var secondThemeStoreName: UILabel!
-    @IBOutlet weak var secondThemeStar: UILabel!
     @IBOutlet weak var secondThemeGenre: UILabel!
     @IBOutlet weak var secondThemeDifficulty: UILabel!
     @IBOutlet weak var secondThemeActivity: UILabel!
@@ -33,28 +32,30 @@ class ThemeCompareViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchThemeData()
-        compareValue(firstValue: firstTheme?.star ?? 0, secondValue: secondTheme?.star ?? 0, firstLabel: firstThemeStar, secondLabel: secondThemeStar)
+      //  scrollView.contentSize = CGSize(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height+300)
+   //     scrollView.isScrollEnabled = true
+    //    scrollView.contentSize = CGSize(width: scrollView.contentSize.width, height: 2000)
         compareValue(firstValue: firstTheme?.horror ?? 0, secondValue: secondTheme?.horror ?? 0, firstLabel: firstThemeHorror, secondLabel: secondThemeHorror)
         compareValue(firstValue: firstTheme?.activity ?? 0, secondValue: secondTheme?.activity ?? 0, firstLabel: firstThemeActivity, secondLabel: secondThemeActivity)
         compareValue(firstValue: firstTheme?.difficulty ?? 0, secondValue: secondTheme?.difficulty ?? 0, firstLabel: firstThemeDifficulty, secondLabel: secondThemeDifficulty)
+        scrollView.isScrollEnabled = true
+        scrollView.contentSize = CGSize(width: scrollView.contentSize.width, height: 2000)
     }
     
     private func fetchThemeData() {
         firstThemeTitle.text = firstTheme?.title ?? ""
         firstThemeStoreName.text = firstTheme?.storeName ?? ""
-        firstThemeStar.text = "\(firstTheme?.star ?? 0)"
         firstThemeGenre.text = firstTheme?.genre ?? ""
-        firstThemeDifficulty.text = "\(firstTheme?.difficulty ?? 0)"
-        firstThemeActivity.text = "\(firstTheme?.activity ?? 0)"
-        firstThemeHorror.text = "\(firstTheme?.horror ?? 0)"
+        firstThemeDifficulty.text = "\(Float(firstTheme?.difficulty ?? 0))"
+        firstThemeActivity.text = "\(Float(firstTheme?.activity ?? 0))"
+        firstThemeHorror.text = "\(Float(firstTheme?.horror ?? 0))"
         
         secondThemeTitle.text = secondTheme?.title ?? ""
         secondThemeStoreName.text = secondTheme?.storeName ?? ""
-        secondThemeStar.text = "\(secondTheme?.star ?? 0)"
         secondThemeGenre.text = secondTheme?.genre ?? ""
-        secondThemeDifficulty.text = "\(secondTheme?.difficulty ?? 0)"
-        secondThemeActivity.text = "\(secondTheme?.activity ?? 0)"
-        secondThemeHorror.text = "\(secondTheme?.horror ?? 0)"
+        secondThemeDifficulty.text = "\(Float(secondTheme?.difficulty ?? 0))"
+        secondThemeActivity.text = "\(Float(secondTheme?.activity ?? 0))"
+        secondThemeHorror.text = "\(Float(secondTheme?.horror ?? 0))"
         
         Task {
             do {

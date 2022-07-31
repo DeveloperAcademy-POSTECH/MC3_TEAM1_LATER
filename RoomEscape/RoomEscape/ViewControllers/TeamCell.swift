@@ -14,6 +14,7 @@ class TeamCell: UITableViewCell {
     @IBOutlet weak var cellContainer: UIView!
     @IBOutlet weak var addImage: UIImageView!
     @IBOutlet weak var addLabel: UILabel!
+    @IBOutlet weak var gearIcon: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -16,7 +16,7 @@ class JSONDataManager: ObservableObject {
     }
     
     private func loadData() {
-        guard let path = Bundle.main.path(forResource: "PohangData", ofType: "json") else {
+        guard let path = Bundle.main.path(forResource: "StoreData", ofType: "json") else {
             print("1")
             return
         }

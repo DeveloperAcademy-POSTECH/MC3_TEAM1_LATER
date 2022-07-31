@@ -17,13 +17,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rXC-AX-xhF">
-                                <rect key="frame" x="30" y="109" width="169.5" height="38.5"/>
+                                <rect key="frame" x="30" y="65" width="169.5" height="38.5"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="32"/>
                                 <color key="textColor" name="text1"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pMM-OO-lWn">
-                                <rect key="frame" x="23" y="168.5" width="368" height="60"/>
+                                <rect key="frame" x="23" y="124.5" width="368" height="60"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="테마간 차이점이 궁금하다면?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="biB-qW-063">
                                         <rect key="frame" x="24" y="21" width="170.5" height="18"/>
@@ -32,23 +32,18 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LGy-Uj-CwP">
-                                        <rect key="frame" x="271.5" y="14" width="72.5" height="32"/>
+                                        <rect key="frame" x="264" y="14" width="80" height="32"/>
                                         <color key="backgroundColor" name="Main"/>
                                         <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="c5E-JW-iDW"/>
                                             <constraint firstAttribute="height" constant="32" id="mGy-Xe-hhf"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="13"/>
                                         <color key="tintColor" name="Main"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="테마 비교">
-                                                    <attributes>
-                                                        <font key="NSFont" size="13" name="AppleSDGothicNeo-Regular"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                            <color key="baseBackgroundColor" name="Main"/>
-                                        </buttonConfiguration>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="테마 비교">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="themeComparisonButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="NNE-kW-V5X"/>
                                         </connections>
@@ -63,16 +58,16 @@
                                     <constraint firstItem="biB-qW-063" firstAttribute="leading" secondItem="pMM-OO-lWn" secondAttribute="leading" constant="24" id="pF4-qS-C4d"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Rqd-UZ-UjU">
-                                <rect key="frame" x="40" y="274.5" width="334" height="528.5"/>
-                                <color key="backgroundColor" name="Background"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Rqd-UZ-UjU">
+                                <rect key="frame" x="23" y="204.5" width="368" height="598.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" name="Background"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TeamTableViewCell" id="aGd-kB-pix">
-                                        <rect key="frame" x="0.0" y="44.5" width="334" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="44.5" width="368" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aGd-kB-pix" id="3qz-jW-Cyg">
-                                            <rect key="frame" x="0.0" y="0.0" width="334" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="368" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <color key="backgroundColor" name="Background"/>
                                         </tableViewCellContentView>
@@ -80,49 +75,67 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QdV-T5-jRw">
-                                <rect key="frame" x="23" y="755" width="368" height="50"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Sex-qZ-7vd">
+                                <rect key="frame" x="0.0" y="346" width="414" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아직 추가된 방이 없어요!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Qih-hW-aKa">
+                                        <rect key="frame" x="124.5" y="0.0" width="165" height="17.5"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
+                                        <color key="textColor" name="text3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나에게 맞는 테마를 검색해보세요" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7FT-oC-sFk">
+                                        <rect key="frame" x="97.5" y="19.5" width="219.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
+                                        <color key="textColor" name="text3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="a0N-Yn-igP"/>
+                                    <constraint firstAttribute="height" constant="40" id="R4M-RQ-W5u"/>
                                 </constraints>
-                                <color key="tintColor" red="0.4823529412" green="0.3803921569" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="팀 만들기"/>
-                                <buttonConfiguration key="configuration" style="filled">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="테마 비교하기">
-                                            <attributes>
-                                                <font key="NSFont" size="15" name="AppleSDGothicNeo-Bold"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1qh-NZ-5nP">
+                                <rect key="frame" x="109" y="421" width="196" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="196" id="QbY-Ce-Uvk"/>
+                                    <constraint firstAttribute="height" constant="50" id="jdk-ZN-pc2"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="테마 추가하기">
+                                    <fontDescription key="titleFontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="15"/>
+                                    <color key="baseForegroundColor" name="text1"/>
+                                    <color key="baseBackgroundColor" name="Main"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="compareButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="s8A-I9-3pu"/>
+                                    <action selector="findThemeButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="CxG-NY-NmF"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" name="Background"/>
                         <constraints>
-                            <constraint firstItem="QdV-T5-jRw" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="23" id="3kf-rZ-NwQ"/>
-                            <constraint firstItem="Rqd-UZ-UjU" firstAttribute="top" secondItem="pMM-OO-lWn" secondAttribute="bottom" constant="46" id="7i6-Lw-Z2M"/>
+                            <constraint firstItem="Rqd-UZ-UjU" firstAttribute="top" secondItem="pMM-OO-lWn" secondAttribute="bottom" constant="20" id="7i6-Lw-Z2M"/>
                             <constraint firstItem="rXC-AX-xhF" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="APW-PJ-XRt"/>
                             <constraint firstItem="pMM-OO-lWn" firstAttribute="top" secondItem="rXC-AX-xhF" secondAttribute="bottom" constant="21" id="Bi8-DI-uVR"/>
-                            <constraint firstItem="rXC-AX-xhF" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="topMargin" constant="65" id="COf-9g-HUA"/>
+                            <constraint firstItem="rXC-AX-xhF" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="topMargin" constant="21" id="COf-9g-HUA"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Rqd-UZ-UjU" secondAttribute="bottom" constant="10" id="D5w-Ue-mDJ"/>
-                            <constraint firstItem="Rqd-UZ-UjU" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="MTq-p7-6ip"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="QdV-T5-jRw" secondAttribute="bottom" constant="8" id="PJq-FU-jcE"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Rqd-UZ-UjU" secondAttribute="trailing" constant="40" id="Vn1-ck-ea4"/>
+                            <constraint firstItem="Rqd-UZ-UjU" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="23" id="MTq-p7-6ip"/>
+                            <constraint firstItem="1qh-NZ-5nP" firstAttribute="top" secondItem="Sex-qZ-7vd" secondAttribute="bottom" constant="35" id="UVY-Z8-r02"/>
+                            <constraint firstItem="1qh-NZ-5nP" firstAttribute="centerX" secondItem="Sex-qZ-7vd" secondAttribute="centerX" id="Vdq-sO-ngy"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Rqd-UZ-UjU" secondAttribute="trailing" constant="23" id="Vn1-ck-ea4"/>
+                            <constraint firstItem="Sex-qZ-7vd" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="302" id="WMe-yX-Qrw"/>
                             <constraint firstItem="pMM-OO-lWn" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="23" id="ZTn-7p-rlT"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Sex-qZ-7vd" secondAttribute="trailing" id="itS-XA-k5n"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="pMM-OO-lWn" secondAttribute="trailing" constant="23" id="pS6-R2-N2f"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="QdV-T5-jRw" secondAttribute="trailing" constant="23" id="uNR-rT-WYV"/>
+                            <constraint firstItem="Sex-qZ-7vd" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="uiZ-8c-LiJ"/>
                         </constraints>
                     </view>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="compareButton" destination="QdV-T5-jRw" id="IXh-4p-tff"/>
+                        <outlet property="emptyButton" destination="1qh-NZ-5nP" id="Rcn-SF-NA5"/>
+                        <outlet property="emptyLabel" destination="Sex-qZ-7vd" id="NDd-U6-EeA"/>
                         <outlet property="infoLabel" destination="biB-qW-063" id="igq-wK-Bap"/>
                         <outlet property="teamNameLabel" destination="rXC-AX-xhF" id="eR7-uB-5H0"/>
                         <outlet property="teamTableView" destination="Rqd-UZ-UjU" id="77p-2M-JW9"/>
@@ -141,6 +154,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SBI-OP-8lD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="714" y="122"/>
+        </scene>
+        <!--Detail-->
+        <scene sceneID="cXX-ft-V8V">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="DetailViewControllerRef" storyboardName="Detail" id="6Us-WC-c8P" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lyk-jY-aPf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="713" y="275"/>
         </scene>
     </scenes>
     <color key="tintColor" name="text1"/>

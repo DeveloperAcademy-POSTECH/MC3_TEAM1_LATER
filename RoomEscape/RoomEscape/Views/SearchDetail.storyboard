@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="UIMenu" message="Requires Xcode 11 or later." minToolsVersion="11.0" requiredIntegratedClassName="UICommandDiff"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search Detail View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="SearchDetailViewController" customModule="RoomEscape" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3dGift" translatesAutoresizingMaskIntoConstraints="NO" id="yhb-SS-GGW">
+                                <rect key="frame" x="212" y="614" width="202" height="202"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="202" id="XtQ-r5-Hum"/>
+                                    <constraint firstAttribute="height" constant="202" id="jWJ-N6-Mcx"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X1g-ZA-d49" userLabel="IntroMessageStackView">
+                                <rect key="frame" x="23" y="52" width="173.5" height="38.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이번 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j4B-LH-H6u">
+                                        <rect key="frame" x="0.0" y="0.0" width="62" height="38.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="32"/>
+                                        <color key="textColor" name="text4"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="방탈출" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Yb-G9-7DO">
+                                        <rect key="frame" x="62" y="0.0" width="83.5" height="38.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="32"/>
+                                        <color key="textColor" name="text1"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="은" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ho-B6-Ic1">
+                                        <rect key="frame" x="145.5" y="0.0" width="28" height="38.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="32"/>
+                                        <color key="textColor" name="text4"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="yMH-la-2xO" userLabel="LocationStackView">
+                                <rect key="frame" x="23" y="121.5" width="368" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g6i-Ye-2QQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="134.5" height="50"/>
+                                        <color key="backgroundColor" name="Background2"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <inset key="titleEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
+                                        <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <menu key="menu" id="eBL-4o-lfi">
+                                            <children>
+                                                <command title="Item 1" id="daf-N1-H54"/>
+                                                <command title="Item 2" id="p7C-r5-AQw"/>
+                                            </children>
+                                        </menu>
+                                        <state key="normal" title="지역">
+                                            <color key="titleColor" name="text4"/>
+                                            <imageReference key="image" image="arrowtriangle.down.fill" catalog="system"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="25"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 에 있는" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ag-Kc-BcE">
+                                        <rect key="frame" x="134.5" y="0.0" width="233.5" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="32"/>
+                                        <color key="textColor" name="text4"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="qpo-xN-ag7"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="UDm-8H-yZs" userLabel="DifficultyStackView">
+                                <rect key="frame" x="23" y="199.5" width="368" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AtV-YJ-D4N">
+                                        <rect key="frame" x="0.0" y="0.0" width="166.5" height="50"/>
+                                        <color key="backgroundColor" name="Background2"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <color key="tintColor" name="text4"/>
+                                        <inset key="titleEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
+                                        <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <menu key="menu" id="fAD-te-N7A">
+                                            <children>
+                                                <command title="Item 1" id="175-ea-Ebd"/>
+                                                <command title="Item 2" id="Mcq-MR-zwH"/>
+                                            </children>
+                                        </menu>
+                                        <state key="normal" title="난이도" image="arrowtriangle.down.fill" catalog="system">
+                                            <color key="titleColor" name="text4"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="25"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 단계의" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IlL-Tz-Tv6">
+                                        <rect key="frame" x="166.5" y="0.0" width="201.5" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="32"/>
+                                        <color key="textColor" name="text4"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="gIo-vA-uw6"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="98M-EV-bZD" userLabel="GenreStackView">
+                                <rect key="frame" x="23" y="277.5" width="368" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5QH-Hs-ggh">
+                                        <rect key="frame" x="0.0" y="0.0" width="140.5" height="50"/>
+                                        <color key="backgroundColor" name="Background2"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <inset key="titleEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
+                                        <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <menu key="menu" id="NaV-dI-eHL">
+                                            <children>
+                                                <command title="Item 1" id="rGQ-wW-Sm7"/>
+                                                <command title="Item 2" id="Y6f-B3-GEJ"/>
+                                            </children>
+                                        </menu>
+                                        <state key="normal" title="어떤">
+                                            <color key="titleColor" name="text4"/>
+                                            <imageReference key="image" image="arrowtriangle.down.fill" catalog="system"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="25"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 장르를" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KGb-hA-xfz">
+                                        <rect key="frame" x="140.5" y="0.0" width="227.5" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="32"/>
+                                        <color key="textColor" name="text4"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="cN8-un-BLd"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="yqx-q3-m4s" userLabel="CompanionStackView">
+                                <rect key="frame" x="23" y="355.5" width="368" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NJi-hj-uQ2">
+                                        <rect key="frame" x="0.0" y="0.0" width="125" height="50"/>
+                                        <color key="backgroundColor" name="Background2"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <inset key="titleEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
+                                        <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <menu key="menu" id="c4c-eU-7sR">
+                                            <children>
+                                                <command title="Item 1" id="vt0-88-Bay"/>
+                                                <command title="Item 2" id="MDp-yQ-T7c"/>
+                                            </children>
+                                        </menu>
+                                        <state key="normal" title="누구와">
+                                            <color key="titleColor" name="text4"/>
+                                            <imageReference key="image" image="arrowtriangle.down.fill" catalog="system"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="25"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 하고싶어요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4D-5q-JQL">
+                                        <rect key="frame" x="125" y="0.0" width="243" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="32"/>
+                                        <color key="textColor" name="text4"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="rZO-Ub-CX3"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EnK-8q-ymM" userLabel="searchButton">
+                                <rect key="frame" x="35" y="750" width="344" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="344" id="5aN-J4-EbV"/>
+                                    <constraint firstAttribute="height" constant="50" id="WbZ-Z8-uov"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="검색하기">
+                                            <attributes>
+                                                <font key="NSFont" size="17" name="AppleSDGothicNeo-SemiBold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="searchButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="pVH-jq-kb2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="Background"/>
+                        <constraints>
+                            <constraint firstItem="98M-EV-bZD" firstAttribute="top" secondItem="UDm-8H-yZs" secondAttribute="bottom" constant="28" id="477-KG-z4U"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="EnK-8q-ymM" secondAttribute="bottom" constant="62" id="57r-va-jer"/>
+                            <constraint firstItem="EnK-8q-ymM" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="5wf-jd-nCB"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="yMH-la-2xO" secondAttribute="trailing" constant="23" id="7ds-JY-43G"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="yhb-SS-GGW" secondAttribute="bottom" constant="46" id="EYn-2J-jbY"/>
+                            <constraint firstItem="X1g-ZA-d49" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="23" id="LhW-hX-ZUN"/>
+                            <constraint firstItem="98M-EV-bZD" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="23" id="RpH-pm-VHl"/>
+                            <constraint firstItem="X1g-ZA-d49" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="8" id="T4s-Pa-S1A"/>
+                            <constraint firstItem="yqx-q3-m4s" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="23" id="TKA-p4-FcN"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="yqx-q3-m4s" secondAttribute="trailing" constant="23" id="YK3-Ym-Fxu"/>
+                            <constraint firstItem="yqx-q3-m4s" firstAttribute="top" secondItem="98M-EV-bZD" secondAttribute="bottom" constant="28" id="ezB-EG-D9s"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="98M-EV-bZD" secondAttribute="trailing" constant="23" id="hJI-XO-Cza"/>
+                            <constraint firstItem="yMH-la-2xO" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="23" id="iku-eh-vBu"/>
+                            <constraint firstItem="UDm-8H-yZs" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="23" id="kuF-Oq-OiI"/>
+                            <constraint firstItem="yMH-la-2xO" firstAttribute="top" secondItem="X1g-ZA-d49" secondAttribute="bottom" constant="31" id="sQi-n6-MbE"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="UDm-8H-yZs" secondAttribute="trailing" constant="23" id="t5T-O6-HLZ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="yhb-SS-GGW" secondAttribute="trailing" id="vzB-vu-tWQ"/>
+                            <constraint firstItem="UDm-8H-yZs" firstAttribute="top" secondItem="yMH-la-2xO" secondAttribute="bottom" constant="28" id="wWi-56-0rG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="wSW-uX-sji">
+                        <barButtonItem key="backBarButtonItem" title=" " id="lky-1u-F2v"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="companionPulldownButton" destination="NJi-hj-uQ2" id="985-gc-bBi"/>
+                        <outlet property="difficultyPulldownButton" destination="AtV-YJ-D4N" id="9bi-7Z-ro6"/>
+                        <outlet property="genrePulldownButton" destination="5QH-Hs-ggh" id="BPI-nI-HW5"/>
+                        <outlet property="locationPulldownButton" destination="g6i-Ye-2QQ" id="4Tl-Tz-jjS"/>
+                        <outlet property="searchButton" destination="EnK-8q-ymM" id="VYF-72-Bbm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1891.304347826087" y="137.94642857142856"/>
+        </scene>
+        <!--SearchDetailResult-->
+        <scene sceneID="Eal-li-oNl">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="SearchDetailResultRef" storyboardName="SearchDetailResult" id="rIf-eX-2te" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fmQ-of-kUV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2542.0289855072465" y="145.98214285714286"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="3dGift" width="196" height="202"/>
+        <image name="arrowtriangle.down.fill" catalog="system" width="128" height="124"/>
+        <namedColor name="Background">
+            <color red="0.062745098039215685" green="0.058823529411764705" blue="0.058823529411764705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Background2">
+            <color red="0.14117647058823529" green="0.14117647058823529" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="text1">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="text4">
+            <color red="0.58823529411764708" green="0.58823529411764708" blue="0.58823529411764708" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

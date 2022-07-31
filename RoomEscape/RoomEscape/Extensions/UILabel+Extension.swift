@@ -11,12 +11,12 @@ import UIKit
 extension UILabel {
     // MARK: - ThemmaCompareViewController 에서 사용하는 UILabel Extension
     func setBetter() {
-        self.font = .boldSystemFont(ofSize: 28)
+        self.font = .boldSystemFont(ofSize: 19)
         self.textColor = .mainPurple
     }
     
     func setWorse() {
-        self.font = .boldSystemFont(ofSize: 28)
+        self.font = .boldSystemFont(ofSize: 19)
         self.textColor = .titleBlack
     }
 }
