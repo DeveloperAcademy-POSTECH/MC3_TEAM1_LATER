@@ -200,7 +200,7 @@
     "homepage": "http://roomsa.co.kr/new_main.asp?R_JIJEM=S17&gotopage=",
     "image": "http://roomsa.co.kr/upload_file/thema/%EC%9B%B9-%ED%8F%AC%EC%8A%A4%ED%84%B0-%EB%B3%80%ED%99%98%EC%9A%A9_%EC%97%90%EC%9D%B4%EB%A7%88%ED%8A%B8.jpg",
     "title": "평화로운 에이마트",
-    "genre": "미션/어드벤처",
+    "genre": "어드벤처",
     "difficulty": 4,
     "activity": 5,
     "horror": 1,
@@ -296,7 +296,7 @@
     "homepage": "http://www.master-key.co.kr/booking/bk_detail?bid=9",
     "image": "http://www.master-key.co.kr/upload/room/57_img1.jpg",
     "title": "드라큘라",
-    "genre": "미션/어드벤처",
+    "genre": "어드벤처",
     "difficulty": 2,
     "activity": 4,
     "horror": 5,
@@ -376,7 +376,7 @@
     "homepage": "http://www.master-key.co.kr/booking/bk_detail?bid=14",
     "image": "http://www.master-key.co.kr/upload/room/89_img1.png",
     "title": "오버타임",
-    "genre": "미션/어드벤처",
+    "genre": "어드벤처",
     "difficulty": 5,
     "activity": 4,
     "horror": 1,
@@ -632,7 +632,7 @@
     "homepage": "http://www.secretgardenescape.com",
     "image": "http://www.secretgardenescape.com/pimages/Product/Pr_1579160943.jpg",
     "title": "영웅을 찾아서",
-    "genre": "미션/어드벤처",
+    "genre": "어드벤처",
     "difficulty": 2,
     "activity": 3,
     "horror": 2,
@@ -860,7 +860,7 @@
     "difficulty": 2,
     "activity": 3,
     "horror": 1,
-    "description": "",
+    "description": "선우의 교제를 반대하는 아빠, 하지만 난 그녀를 너무 사랑한다. 가족들이 여행에서 돌아오기 전, 금두꺼비를 훔쳐 대구를 떠나자.",
     "recommendation": "등잔 밑이 어둡다! 섬세하고 침착하신 분"
   },
   {
@@ -876,7 +876,7 @@
     "difficulty": 5,
     "activity": 3,
     "horror": 3,
-    "description": "",
+    "description": "그의 오피스엔 업무태만이란 존재하지 않는다. 정해진 업무량을 다 채우지 못하면 Mr.레드의 개인면담이 나를 기다린다.",
     "recommendation": "실제 영화를 기반으로한 디테일을 원하시는 분"
   },
   {
@@ -892,7 +892,7 @@
     "difficulty": 5,
     "activity": 2,
     "horror": 5,
-    "description": "",
+    "description": "까마귀로 태어나 인간을 탐한 지퍼스 크리퍼스. 크리퍼스, 그 다리는 누구에게 얻었니? 크리퍼스, 그 심장은 누구에게 얻었니?",
     "recommendation": "신박한 장치가 그저 좋은 방린이"
   },
   {
@@ -908,7 +908,7 @@
     "difficulty": 2,
     "activity": 2,
     "horror": 3,
-    "description": "",
+    "description": "일주일 전 서윤이가 자살했다. 학교에선 성적비관이라고 하지만 난 믿지 않는다. 누가 서윤이를 자살하게 만들었는지 밝혀내고 말겠어.",
     "recommendation": "으스스한 분위기에 압도되지 않을 강심장"
   },
   {
@@ -924,7 +924,7 @@
     "difficulty": 5,
     "activity": 4,
     "horror": 4,
-    "description": "",
+    "description": "그가 야채를 썰면 너는 숨어야해. 그가 물을 끓이면 너는 떨어야해.",
     "recommendation": "무서운 건 좋아하지만 어두운 건 싫어하시는 분"
   },
   {
@@ -940,7 +940,7 @@
     "difficulty": 3,
     "activity": 5,
     "horror": 1,
-    "description": "",
+    "description": "옷장 속으로 사라져버린 토끼, 녀석을 쫓아가다 보니 너무 깊게 들어와 버렸다. 나는 무사히 집으로 돌아갈 수 있을까?",
     "recommendation": "대표 테마부터 정복해보고 싶으신 분"
   },
   {
@@ -956,7 +956,7 @@
     "difficulty": 2,
     "activity": 3,
     "horror": 2,
-    "description": "",
+    "description": "우리 마을엔 해가 지고 달이 뜨면 공연을 시작하는 서커스가 있다. 그날 죽은 원숭이 밍키의 슬픈 눈동자. 난 그 눈을 잊을 수 없다.",
     "recommendation": "능동형 액션을 선호하시는 분"
   },
   {
@@ -968,11 +968,11 @@
     "homepage": "http://www.alice-escape.com",
     "image": "http://www.alice-escape.com/upload_file/room/room1_1.jpg",
     "title": "아빠의 서재",
-    "genre": "성인",
+    "genre": "감성, 성인",
     "difficulty": 3,
     "activity": 3,
     "horror": 1,
-    "description": "",
+    "description": "유명 영화감독, 자상한 남편, 친구 같은 아빠. 그런 아빠의 서재엔 비밀이 있다. 부모님이 시사회에서 돌아오기까지 1시간, 오늘이야말로 서재의 비밀을 밝혀내고 말겠어. ( ※노해답 테마입니다(힌트 3개 제한) / 신분증 지참 필수 )",
     "recommendation": "비주얼 어택으로 잠깐 뇌가 정지되고 싶으신 분"
   },
   {
@@ -988,7 +988,7 @@
     "difficulty": 5,
     "activity": 4,
     "horror": 1,
-    "description": "",
+    "description": "전설의 보물 상어의 무덤을 찾아나선지 2년, 우리는 조난되었다. 항로를 아는 이는 선장뿐, 태풍이 오기 전, 항로를 찾아 환상크루즈를 탈출하라. (힌트 제한 5개, 노 해설 테마)",
     "recommendation": "항로를 찾아 크루즈를 탈출! 거대한 스케일을 느껴보고 싶으신 분"
   },
   {
@@ -1160,7 +1160,7 @@
     "homepage": "https://지구별.com",
     "image": "https://www.xn--2e0b040a4xj.com/storage/theme/2022_07/29/d42pfOe3nYM05cJupJBYfFm4HCedgRKs5z50XPZ6.jpg",
     "title": "펭귄 키우기",
-    "genre": "미션/어드벤처",
+    "genre": "어드벤처",
     "difficulty": 5,
     "activity": 4,
     "horror": 1,
@@ -1196,7 +1196,7 @@
     "difficulty": 2,
     "activity": 3,
     "horror": 0,
-    "description": "",
+    "description": "우리... 다시 사랑할 수 있을까? \n그녀(그)가 헤어진 연인을 그리워 한다. 과거로 돌아간 우리... 다시 사랑할 수 있을까?",
     "recommendation": "그렇게 야하진 않고 스토리적 요소가 풍부한 방을 찾으시는 분"
   },
   {
@@ -1212,7 +1212,7 @@
     "difficulty": 2,
     "activity": 1,
     "horror": 2,
-    "description": "",
+    "description": "언제나 우리를 사랑해주는 친절한 주인님 \n주인님과 오랜만에 하는 즐거운 드라이브. 잠깐 멈춰서 휴식을 취하던 도중 거리의 불빛에 이끌려 차에서 내렸는데, 어? 주, 주인님! 주인님이 먼저 출발을 해버렸다. 주인님! 조금만 기다려주세요! 이렇게 된 이상 우리 둘이 힘을 합쳐 주인님이 있는 우리의 집으로 가야만 해! 우리는 다시 주인님 곁으로 갈수 있을까? ",
     "recommendation": "직관적으로 쉽게 풀리는 문제로 입문하고 싶으신 분"
   },
   {
@@ -1224,11 +1224,11 @@
     "homepage": "http://www.codenameblack-dg.co.kr/index.html",
     "image": "http://www.codenameblack-dg.co.kr/pimages/Product/Pr_1508406190.jpg",
     "title": "스카이 테러",
-    "genre": "미션/어드벤처",
+    "genre": "어드벤처",
     "difficulty": 5,
     "activity": 2,
     "horror": 1,
-    "description": "",
+    "description": "절체절명의 위기상황에 놓인 여객기 \n오랜만의 휴식으로 여행을 하기위해 SA849에 올라탄 당신. 잠시 볼일을 보러 화장실을 가는 순간 의문의 집단에 의해 여객기는 테러를 당하게 된다. 테러집단은 자동항로를 도심지로 설정하고, 기장과 승무원을 죽인 뒤 여객기에서 탈출했다. 뜻하지 않은 위기에 처한 당신! 시간이 없다. 볼일을 잠시 끊고 이 여객기에서 탈출하라.",
     "recommendation": "정신 없이 바쁜 방탈출을 즐기시는 분"
   },
   {
@@ -1244,7 +1244,7 @@
     "difficulty": 3,
     "activity": 2,
     "horror": 4,
-    "description": "",
+    "description": "평화로워 보였던 여고 교실 안 \n야자시간이 끝나고 눈을 떠보니 교실안에 아무도 보이지 않는다.그리고는 친구들이 하나씩 죽어가는걸 보게된다. 1시간에 탈출하지 못하면 그녀의 저주에 걸려 죽음을 피할 수 없게 된다!저주의 정체를 밝히고 이곳에서 빠져나와야한다.",
     "recommendation": "샅샅히 뒤져보는 방탈출을 좋아하시는 분"
   },
   {
@@ -1260,7 +1260,7 @@
     "difficulty": 4,
     "activity": 5,
     "horror": 1,
-    "description": "",
+    "description": "서기 2119년. \n지구의 자원고갈로 새로운 식민행성 탐사에 나선 우주개척선 라비린스호.라비린스호의 승무원인 당신은 인공 동면에서 갑자기 깨버리게 된다. 예정대로라면 목적지에 도착하는 44년 뒤에 깨어났어야 했는데... 심상치 않은 우주선 내부 분위기에 홀로 깨어난 당신. 도대체 무슨 일이 일어나고 있는 것일까.",
     "recommendation": "우주선에서 홀로 깨어났다는 낯선 설정으로 오는 서늘한 느낌을 느끼고 싶으신 분"
   },
   {
@@ -1276,7 +1276,7 @@
     "difficulty": 3,
     "activity": 3,
     "horror": 3,
-    "description": "",
+    "description": "행방불명된 여동생, 그리고...\n여동생과 함께 놀이동산에 온 당신. 잠깐 한 눈 판 사이 여동생이 사라져버렸다. 폐장시간이 다되도록 보이지 않는 여동생. 점차 하나둘 사람들이 사라져가고 어느 순간 놀이동산에 혼자 남게 됐다. 여동생의 흔적을 찾아 헤매는데...",
     "recommendation": "어두운 분위기의 방에서의 무서움을 즐기시는 분"
   },
   {
@@ -1292,7 +1292,7 @@
     "difficulty": 4,
     "activity": 2,
     "horror": 5,
-    "description": "",
+    "description": "사라진 그녀(공포테마)\n 어느날 사랑하는 나의 애인의 흔적도 없이 사라졌다. 그는 모든 수단을 동원하여 그녀가 사라진곳을 추적한 결과 마지막으로 있었던곳이 성인용품을 판매하는 전용오피스텔 였다는 것을 알게된다. 이곳에 납치된 애인을 구출하러 잠입한 그는 애인과 함께 그곳에서 탈출할 수 있을까? 그리고 지금 이곳에서는 무슨일이 일어나고 있는걸까?",
     "recommendation": "꾸금력이 강한 테마를 좋아하시는 분"
   },
   {
@@ -1308,7 +1308,7 @@
     "difficulty": 4,
     "activity": 2,
     "horror": 1,
-    "description": "",
+    "description": "당신과 동료는 그곳을 탈출할 수 있을까?\n 광산에서 일을 하고 있던 4명의 드워프. 갑작스런 지진에 출구가 막혔다. 당신과 동료는 그곳을 탈출할 수 있을까?",
     "recommendation": "광산은 맞는데 분위기가 정말 좋은… 인테리어 좋은 방을 선호하시는 분"
   },
   {
@@ -1336,7 +1336,7 @@
     "homepage": "https://www.code-escape-dg.com:6016/web/home.php?mid=3&go=rooms",
     "image": "https://www.code-escape-dg.com:6016/file/theme/13_a.jpg",
     "title": "게이샤의 붉은 편지",
-    "genre": "미션/어드벤처",
+    "genre": "어드벤처",
     "difficulty": 4,
     "activity": 3,
     "horror": 4,
@@ -1416,7 +1416,7 @@
     "homepage": "http://황금열쇠.com/layout/res/home.php?go=main",
     "image": "http://xn--jj0b998aq3cptw.com/file/theme/3_a.jpg",
     "title": "JAIL.O",
-    "genre": "미션/어드벤처",
+    "genre": "어드벤처",
     "difficulty": 5,
     "activity": 5,
     "horror": 2,
@@ -1448,7 +1448,7 @@
     "homepage": "http://황금열쇠.com/layout/res/home.php?go=main",
     "image": "http://xn--jj0b998aq3cptw.com/file/theme/5_a.jpg",
     "title": "타임 스틸러",
-    "genre": "미션/어드벤처",
+    "genre": "어드벤처",
     "difficulty": 4,
     "activity": 4,
     "horror": 2,
@@ -1528,7 +1528,7 @@
     "homepage": "https://blog.naver.com/theyescape",
     "image": "https://search.pstatic.net/common/?autoRotate=true&quality=95&type=w750&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20161007_152%2F1475799670234AFDSW_JPEG%2F176880618076414_2.jpeg",
     "title": "Deep Forest",
-    "genre": "미션/어드벤처",
+    "genre": "어드벤처",
     "difficulty": 5,
     "activity": 4,
     "horror": 2,
@@ -1784,7 +1784,7 @@
     "homepage": "http://thecode05.kr",
     "image": "http://thecode02.kr/data/goodsImages/GOODS1_20220504175951.jpg",
     "title": "도박꾼: 마지막 배팅",
-    "genre": "미션/어드벤처",
+    "genre": "어드벤처",
     "difficulty": 5,
     "activity": 4,
     "horror": 3,

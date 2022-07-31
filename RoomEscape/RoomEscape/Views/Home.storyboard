@@ -68,7 +68,7 @@
                                                 </cells>
                                             </collectionView>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="kwc-OX-R76">
-                                                <rect key="frame" x="0.0" y="641.66666666666663" width="390" height="354"/>
+                                                <rect key="frame" x="0.0" y="639.33333333333337" width="390" height="354"/>
                                                 <color key="backgroundColor" name="Background"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="354" id="pev-aI-2hb"/>
@@ -104,11 +104,11 @@
                                                 <color key="backgroundColor" name="Main"/>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AJ7-mT-sOK" userLabel="FirstRecommendationLabelStackView">
-                                                <rect key="frame" x="25" y="565.66666666666663" width="52" height="36"/>
+                                                <rect key="frame" x="24.999999999999996" y="565.66666666666663" width="48.666666666666657" height="33.666666666666629"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="공포" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dkX-1L-eF7">
-                                                        <rect key="frame" x="0.0" y="0.0" width="52" height="36"/>
-                                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="48.666666666666664" height="33.666666666666664"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="28"/>
                                                         <color key="textColor" name="text1"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -120,7 +120,7 @@
                                                 <color key="backgroundColor" name="Main"/>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j3J-Zj-Xs7" userLabel="SecondRecommendationLabelStackView">
-                                                <rect key="frame" x="24.999999999999996" y="1035.6666666666667" width="48.666666666666657" height="33.666666666666742"/>
+                                                <rect key="frame" x="24.999999999999996" y="1033.3333333333333" width="48.666666666666657" height="33.666666666666742"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="감성" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aah-iy-Kj2">
                                                         <rect key="frame" x="0.0" y="0.0" width="48.666666666666664" height="33.666666666666664"/>
@@ -131,7 +131,7 @@
                                                 </subviews>
                                             </stackView>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="CrO-lN-nwH">
-                                                <rect key="frame" x="0.0" y="1109.3333333333333" width="390" height="354"/>
+                                                <rect key="frame" x="0.0" y="1107" width="390" height="354"/>
                                                 <color key="backgroundColor" name="Background"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="354" id="jjQ-Si-IT8"/>
@@ -196,7 +196,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H7F-En-qR9">
-                                                <rect key="frame" x="85" y="572.66666666666663" width="24" height="24"/>
+                                                <rect key="frame" x="81.666666666666671" y="572.66666666666663" width="24" height="24"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="24" id="pTW-AY-jPP"/>
                                                     <constraint firstAttribute="width" constant="24" id="pyp-zk-7tK"/>
@@ -208,7 +208,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6v-kQ-50L">
-                                                <rect key="frame" x="81.666666666666671" y="1042.6666666666667" width="24" height="24"/>
+                                                <rect key="frame" x="81.666666666666671" y="1040.3333333333333" width="24" height="24"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="24" id="DYT-4y-MyN"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="24" id="ROZ-AR-Kxi"/>
