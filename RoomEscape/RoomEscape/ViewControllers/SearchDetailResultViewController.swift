@@ -35,31 +35,28 @@ class SearchDetailResultViewController: UIViewController {
         } else {
             withLabel.text = selectedWith + "과"
         }
+        
+        resultTableView.delegate = self
+        resultTableView.dataSource = self
+        resultTableView.register(UINib(nibName: Constants.roomTableViewCell, bundle: nil), forCellReuseIdentifier: Constants.roomTableViewCell)
 
         configureSearchResult()
-        
-        if searchResultRoomModels != [] {
-            resultTableView.delegate = self
-            resultTableView.dataSource = self
-            resultTableView.register(UINib(nibName: Constants.roomTableViewCell, bundle: nil), forCellReuseIdentifier: Constants.roomTableViewCell)
-        }
-        
     }
     
     private func configureSearchResult() {
-        if selectedDifficulty == "쉬운(1~2)" {
+        if selectedDifficulty == "쉬운 (1~2)" {
             searchResultRoomModels = roomDataManager.roomData.filter { RoomModel in
                 RoomModel.location == selectedLocation &&
                 RoomModel.genre == selectedTheme &&
                 RoomModel.difficulty == 2
             }
-        } else if selectedDifficulty == "보통(3~4)" {
+        } else if selectedDifficulty == "보통 (3~4)" {
             searchResultRoomModels = roomDataManager.roomData.filter { RoomModel in
                 RoomModel.location == selectedLocation &&
                 RoomModel.genre == selectedTheme &&
                 RoomModel.difficulty == 4
             }
-        } else if selectedDifficulty == "어려움(5)" {
+        } else if selectedDifficulty == "어려움 (5)" {
             searchResultRoomModels = roomDataManager.roomData.filter { RoomModel in
                 RoomModel.location == selectedLocation &&
                 RoomModel.genre == selectedTheme &&
@@ -71,6 +68,10 @@ class SearchDetailResultViewController: UIViewController {
                 RoomModel.genre == selectedTheme &&
                 RoomModel.difficulty == 1
             }
+        }
+        
+        if searchResultRoomModels.isEmpty {
+            resultTableView.isHidden = true
         }
     }
     
