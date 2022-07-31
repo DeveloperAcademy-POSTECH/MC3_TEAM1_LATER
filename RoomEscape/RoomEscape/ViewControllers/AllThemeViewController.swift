@@ -63,13 +63,20 @@ class AllThemeViewController: UIViewController {
             }
             
         } else if themeByRecommendation != "" {
-//            if themeByRecommendation.count == 2 {
-//                highlight.frame.size.width = 88
-//            } else if themeByRecommendation.count == 3 {
-//                highlight.frame.size.width = 103
-//            } else {
-//                highlight.frame.size.width = 143
-//            }
+            
+            let themeLabel: String = themeByRecommendation.components(separatedBy: "테")[0]
+            
+            if themeLabel.count == 2 {
+                highlight.frame.size.width = 118
+            } else if themeLabel.count == 3 {
+                highlight.frame.size.width = 144
+            } else if themeLabel.count == 4 {
+                highlight.frame.size.width = 164
+            } else if themeLabel.count == 5 {
+                highlight.frame.size.width = 174
+            } else if themeLabel.count == 7 {
+                highlight.frame.size.width = 218
+            }
 
             let firstSpace = criterionLabel.text!.firstIndex(of: "는") ?? criterionLabel.text!.endIndex
             let recommendationLabel = criterionLabel.text![..<firstSpace]
@@ -82,9 +89,10 @@ class AllThemeViewController: UIViewController {
 
 extension AllThemeViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let cell = tableView.cellForRow(at: indexPath) as? RoomTableViewCell else { return }
         guard let viewController = self.storyboard?.instantiateViewController(identifier: "DetailViewControllerRef") as? DetailViewController else { return }
         
-        viewController.roomIndex = indexPath.row
+        viewController.roomIndex = cell.index - 1
         
         self.navigationController?.pushViewController(viewController, animated: true)
     }
@@ -106,6 +114,7 @@ extension AllThemeViewController: UITableViewDataSource {
         cell.genre.text = roomInfo.genre
         cell.roomImage?.contentMode = .scaleToFill
         cell.roomImage?.clipsToBounds = true
+        cell.index = roomInfo.id
         
         for i in 0 ..< roomInfo.difficulty {
             cell.difficulties?.arrangedSubviews[i].tintColor = UIColor(named: "star");
