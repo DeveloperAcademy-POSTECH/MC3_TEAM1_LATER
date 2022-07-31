@@ -20,7 +20,10 @@ struct Constants {
         "코믹",
         "감성",
         "추리",
-        "스릴러"
+        "스릴러",
+        "코믹/큐트",
+        "잠입/첩보",
+        "어드벤처"
     ]
     
     static let mainImageArray: [String] = [

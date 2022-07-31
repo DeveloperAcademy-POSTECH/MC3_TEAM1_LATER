@@ -39,7 +39,9 @@ class HomeViewController: UIViewController {
     // viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        // Currnet Location Setting
+        configureCurrnetLocation()
+
         // Random genres setting
         configureGenreRecommendation()
         
@@ -49,11 +51,9 @@ class HomeViewController: UIViewController {
         // Pull down setting
         configruePulldownButton()
         
-        // ✅ Currnet Location Setting
-        configureCurrnetLocation()
-        
         // Configure other settings
         dimensionImageView.image = UIImage(named: Constants.mainImageArray[Int.random(in: 0..<Constants.mainImageArray.count)])
+        
     }
     
     // Handling functions
@@ -72,37 +72,54 @@ class HomeViewController: UIViewController {
     
     private func configureGenreRecommendation() {
         let introLabel: String = "테마는 어때요?"
-        
-        genreRecommendation.text = Constants.genreCategories[Int.random(in: 0..<Constants.genreCategories.count)]
-        genreRecommendationSecond.text = Constants.genreCategories[Int.random(in: 0..<Constants.genreCategories.count)]
-        
-        while genreRecommendation.text == genreRecommendationSecond.text {
+
+        while randomRoomModels.isEmpty || randomRoomModelsSecond.isEmpty {
+
             genreRecommendation.text = Constants.genreCategories[Int.random(in: 0..<Constants.genreCategories.count)]
             genreRecommendationSecond.text = Constants.genreCategories[Int.random(in: 0..<Constants.genreCategories.count)]
-        }
         
-        if genreRecommendation.text!.count == 2 {
-            firstRecommendationHighlight.frame.size.width = 102
-        } else {
-            firstRecommendationHighlight.frame.size.width = 130
-        }
+            while genreRecommendation.text == genreRecommendationSecond.text {
+                genreRecommendation.text = Constants.genreCategories[Int.random(in: 0..<Constants.genreCategories.count)]
+                genreRecommendationSecond.text = Constants.genreCategories[Int.random(in: 0..<Constants.genreCategories.count)]
+            }
         
-        if genreRecommendationSecond.text!.count == 2 {
-            secondRecommendationHighlight.frame.size.width = 102
-        } else {
-            secondRecommendationHighlight.frame.size.width = 130
-        }
-        
-        randomRoomModels = roomDataManager.roomData.filter { RoomModel in
-            RoomModel.genre == genreRecommendation.text!.components(separatedBy: " ")[0]
-        }
-        randomRoomModelsSecond = roomDataManager.roomData.filter { RoomModel in
-            RoomModel.genre == genreRecommendationSecond.text!.components(separatedBy: " ")[0]
+            if genreRecommendation.text!.count == 2 {
+                firstRecommendationHighlight.frame.size.width = 98
+            } else if genreRecommendation.text!.count == 3 {
+                firstRecommendationHighlight.frame.size.width = 124
+            } else if genreRecommendation.text!.count == 4 {
+                firstRecommendationHighlight.frame.size.width = 144
+            } else if genreRecommendation.text!.count == 5 {
+                firstRecommendationHighlight.frame.size.width = 154
+            } else if genreRecommendation.text!.count == 7 {
+                firstRecommendationHighlight.frame.size.width = 198
+            }
+
+            if genreRecommendationSecond.text!.count == 2 {
+                secondRecommendationHighlight.frame.size.width = 98
+            } else if genreRecommendationSecond.text!.count == 3 {
+                secondRecommendationHighlight.frame.size.width = 124
+            } else if genreRecommendationSecond.text!.count == 4 {
+                secondRecommendationHighlight.frame.size.width = 144
+            } else if genreRecommendationSecond.text!.count == 5 {
+                secondRecommendationHighlight.frame.size.width = 154
+            } else if genreRecommendationSecond.text!.count == 7 {
+                secondRecommendationHighlight.frame.size.width = 198
+            }
+                
+            randomRoomModels = roomDataManager.roomData.filter { RoomModel in
+                RoomModel.genre == genreRecommendation.text!.components(separatedBy: " ")[0] &&
+                RoomModel.location == currentLocationLabel.text!.components(separatedBy: " ")[0]
+            }
+            randomRoomModelsSecond = roomDataManager.roomData.filter { RoomModel in
+                RoomModel.genre == genreRecommendationSecond.text!.components(separatedBy: " ")[0] &&
+                RoomModel.location == currentLocationLabel.text!.components(separatedBy: " ")[0]
+            }
         }
         
         genreRecommendation.text = genreRecommendation.text! + introLabel
         genreRecommendationSecond.text = genreRecommendationSecond.text! + introLabel
-        
+    
     }
     
     private func configureDelegateSetting() {
@@ -160,8 +177,18 @@ class HomeViewController: UIViewController {
         locationRoomModels = roomDataManager.roomData.filter { RoomModel in
             RoomModel.location == location
         }
+        randomRoomModels = roomDataManager.roomData.filter { RoomModel in
+            RoomModel.genre == genreRecommendation.text!.components(separatedBy: "테")[0] &&
+            RoomModel.location == currentLocationLabel.text!.components(separatedBy: " ")[0]
+        }
+        randomRoomModelsSecond = roomDataManager.roomData.filter { RoomModel in
+            RoomModel.genre == genreRecommendationSecond.text!.components(separatedBy: "테")[0] &&
+            RoomModel.location == currentLocationLabel.text!.components(separatedBy: " ")[0]
+        }
         
         locationCollectionView.reloadData()
+        recommendationCollectionView.reloadData()
+        recommendationCollectionViewSecond.reloadData()
     }
     
     @IBAction func locationAllViewButtonPressed(_ sender: Any) {
