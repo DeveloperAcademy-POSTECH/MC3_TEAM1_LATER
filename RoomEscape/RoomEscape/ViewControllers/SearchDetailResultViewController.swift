@@ -35,30 +35,46 @@ class SearchDetailResultViewController: UIViewController {
         } else {
             withLabel.text = selectedWith + "과"
         }
-
+        
         resultTableView.delegate = self
         resultTableView.dataSource = self
         resultTableView.register(UINib(nibName: Constants.roomTableViewCell, bundle: nil), forCellReuseIdentifier: Constants.roomTableViewCell)
 
         configureSearchResult()
-        
     }
     
     private func configureSearchResult() {
-        searchResultRoomModels = roomDataManager.roomData.filter { RoomModel in
-            RoomModel.location == selectedLocation &&
-            RoomModel.genre == selectedTheme
-//            RoomModel.difficulty == (selectedDifficulty == "쉬운(1~2)"
-//                                     ? 2
-//                                     : selectedDifficulty == "보통(3~4)"
-//                                        ? 4
-//                                        : selectedDifficulty == "어려움(5)"
-//                                        ? 5
-//                                        : 1
-//            )
-            
+        if selectedDifficulty == "쉬운 (1~2)" {
+            searchResultRoomModels = roomDataManager.roomData.filter { RoomModel in
+                RoomModel.location == selectedLocation &&
+                RoomModel.genre == selectedTheme &&
+                RoomModel.difficulty == 2
+            }
+        } else if selectedDifficulty == "보통 (3~4)" {
+            searchResultRoomModels = roomDataManager.roomData.filter { RoomModel in
+                RoomModel.location == selectedLocation &&
+                RoomModel.genre == selectedTheme &&
+                RoomModel.difficulty == 4
+            }
+        } else if selectedDifficulty == "어려움 (5)" {
+            searchResultRoomModels = roomDataManager.roomData.filter { RoomModel in
+                RoomModel.location == selectedLocation &&
+                RoomModel.genre == selectedTheme &&
+                RoomModel.difficulty == 5
+            }
+        } else {
+            searchResultRoomModels = roomDataManager.roomData.filter { RoomModel in
+                RoomModel.location == selectedLocation &&
+                RoomModel.genre == selectedTheme &&
+                RoomModel.difficulty == 1
+            }
+        }
+        
+        if searchResultRoomModels.isEmpty {
+            resultTableView.isHidden = true
         }
     }
+    
 }
 
 extension SearchDetailResultViewController: UITableViewDelegate {
@@ -99,7 +115,7 @@ extension SearchDetailResultViewController: UITableViewDataSource {
                 if let data = try? Data(contentsOf: url) {
                     cell.roomImage?.image = UIImage(data: data)
                 } else {
-                    cell.roomImage?.image = UIImage(systemName: "house")
+                    cell.roomImage?.image = UIImage(named: "noRoom")
                 }
             }
         }

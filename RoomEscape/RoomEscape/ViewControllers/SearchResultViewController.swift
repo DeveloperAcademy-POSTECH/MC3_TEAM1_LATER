@@ -59,8 +59,6 @@ extension SearchResultViewController: UITableViewDataSource {
         cell.roomImage?.contentMode = .scaleToFill
         cell.roomImage?.clipsToBounds = true
         cell.index = roomInfo.id
-        print(roomInfo.id)
-        print("🔥🔥🔥")
         
         for i in 0 ..< roomInfo.difficulty {
             cell.difficulties?.arrangedSubviews[i].tintColor = UIColor(named: "star");
@@ -71,7 +69,7 @@ extension SearchResultViewController: UITableViewDataSource {
                 if let data = try? Data(contentsOf: url) {
                     cell.roomImage?.image = UIImage(data: data)
                 } else {
-                    cell.roomImage?.image = UIImage(systemName: "house")
+                    cell.roomImage?.image = UIImage(named: "noRoom")
                 }
             }
         }

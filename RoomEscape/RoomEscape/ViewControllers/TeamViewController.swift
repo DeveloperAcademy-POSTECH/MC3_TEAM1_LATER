@@ -315,7 +315,7 @@ extension TeamViewController: UITableViewDataSource {
                     if let data = try? Data(contentsOf: url) {
                         selectionCell.roomImage?.image = UIImage(data: data)
                     } else {
-                        selectionCell.roomImage?.image = UIImage(systemName: "house")
+                        selectionCell.roomImage?.image = UIImage(named: "noRoom")
                     }
                 }
             }
