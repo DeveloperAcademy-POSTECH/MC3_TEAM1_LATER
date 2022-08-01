@@ -34,10 +34,10 @@
                                         <rect key="frame" x="127" y="4" width="194" height="129"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fyN-hN-hP3" userLabel="Top Stack">
-                                                <rect key="frame" x="0.0" y="0.0" width="194" height="76"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="194" height="73"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="eYE-LZ-uro" userLabel="Location Stack">
-                                                        <rect key="frame" x="0.0" y="0.0" width="194" height="18"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="194" height="15"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Zoi-my-VSC">
                                                                 <rect key="frame" x="0.0" y="1" width="18" height="16.5"/>
@@ -55,11 +55,11 @@
                                                             </label>
                                                         </subviews>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="18" id="lwS-qt-SLe"/>
+                                                            <constraint firstAttribute="height" constant="15" id="lwS-qt-SLe"/>
                                                         </constraints>
                                                     </stackView>
                                                     <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="방탈출 이름" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gnB-I9-xWB">
-                                                        <rect key="frame" x="0.0" y="26" width="194" height="50"/>
+                                                        <rect key="frame" x="0.0" y="23" width="194" height="50"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="50" id="NLd-Zd-6Ef"/>

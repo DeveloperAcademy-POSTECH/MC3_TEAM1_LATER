@@ -17,7 +17,7 @@ struct ThemePoster: View {
         HStack(alignment: .bottom, spacing: 17) {
             Image(uiImage: image ?? UIImage(systemName: "exclamationmark.triangle.fill")!)
                 .resizable()
-                .frame(width: 179)
+                .frame(width: 179, height: 229)
                 .cornerRadius(10)
             VStack(alignment: .leading, spacing: 8) {
                 Text("\(genre)테마")
@@ -39,7 +39,7 @@ struct ThemePoster: View {
                 }
             }
         }
-        .frame(height: 229, alignment: .leading)
+        .frame(width: 400, alignment: .leading)
     }
 }
 

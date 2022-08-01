@@ -76,7 +76,7 @@ class MakeTeamViewController: UIViewController {
     }
     
     @IBAction func makeButtonTapped(_ sender: UIButton) {
-        if makeButton.tintColor == UIColor.mainPurple {
+        if makeButton.backgroundColor == UIColor.mainPurple {
             guard let teamName = self.teamNameField.text else { return }
             switch self.editorMode {
             case let .edit(index):

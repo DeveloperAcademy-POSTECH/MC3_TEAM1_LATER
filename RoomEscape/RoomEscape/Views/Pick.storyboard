@@ -210,7 +210,6 @@
                                     <constraint firstAttribute="height" constant="50" id="K1n-Rf-ePu"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="17"/>
-                                <color key="tintColor" name="Main"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="팀 만들기">
                                     <color key="titleColor" name="text1"/>

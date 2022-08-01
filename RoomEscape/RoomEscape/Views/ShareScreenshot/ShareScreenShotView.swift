@@ -15,7 +15,7 @@ struct ShareScreenShotView: View {
     var body: some View {
         VStack {
             HStack {
-                Text("\(forWhom)를 위해\n준비했어요")
+                Text("\(forWhom)을(를) 위해\n준비했어요")
                     .multilineTextAlignment(.leading)
                     .padding(.leading, 23)
                     .padding(.top, 21)
@@ -37,6 +37,7 @@ struct ShareScreenShotView: View {
             .padding(.horizontal, 27)
             .padding(.vertical, 40)
         }
+        .frame(minHeight: 1000)
         .background(Color("Background"))
     }
 }
