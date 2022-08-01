@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>위치 기반 추천 서비스를 위해 고객님의 현재 위치 정보를 사용해도 될까요?</string>
+	<string>사용자의 현재 위치에 대한 접근을 허용합니다. 앱 사용시 현재 위치 정보를 통해 &quot;가보자고&quot;의 위치 기반 추천 서비스를 제공 받습니다.</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>위치 기반 추천 서비스를 위해 고객님의 현재 위치 정보를 사용해도 될까요?</string>
+	<string>사용자의 현재 위치에 대한 접근을 허용합니다. 앱 사용시 현재 위치 정보를 통해 &quot;가보자고&quot;의 위치 기반 추천 서비스를 제공 받습니다.</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
