@@ -1,9 +1,9 @@
 # MC3 TEAM1 LATER
 [App Store](https://apps.apple.com/us/app/%EA%B0%80%EB%B3%B4%EC%9E%90%EA%B3%A0-gbzg/id1637050690)
 
-## ⏰LATER
+## ⏰LATER!
 
-![Logo](https://dummyimage.com/1000x300/000/fff.png)
+![Logo](https://user-images.githubusercontent.com/56063805/182788465-35b43de7-f8c7-4051-82ac-1ff0bec72cb6.png)
 
 
 # :iphone: 가보자고
