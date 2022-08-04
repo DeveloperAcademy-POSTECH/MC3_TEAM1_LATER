@@ -50,15 +50,13 @@ class SearchDetailResultViewController: UIViewController {
             filteringArray = roomDataManager.roomData.filter { RoomModel in
                 RoomModel.location == selectedLocation &&
                 RoomModel.genre == selectedTheme &&
-                RoomModel.difficulty == 1 ||
-                RoomModel.difficulty == 2
+                (RoomModel.difficulty == 1 || RoomModel.difficulty == 2)
             }
         } else if selectedDifficulty == "보통 (3~4)" {
             filteringArray = roomDataManager.roomData.filter { RoomModel in
                 RoomModel.location == selectedLocation &&
                 RoomModel.genre == selectedTheme &&
-                RoomModel.difficulty == 3 ||
-                RoomModel.difficulty == 4
+                (RoomModel.difficulty == 3 || RoomModel.difficulty == 4)
             }
         } else if selectedDifficulty == "어려움 (5)" {
             filteringArray = roomDataManager.roomData.filter { RoomModel in
